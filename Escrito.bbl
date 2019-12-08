@@ -1,0 +1,28 @@
+\begin{thebibliography}{}
+
+\bibitem [\protect \citeauthoryear {%
+{Caja Costarricense del Seguro Social}%
+}{%
+{Caja Costarricense del Seguro Social}%
+}{%
+{\protect \APACyear {2013}}%
+}]{%
+CajaCostarricensedelSeguroSocial2013}
+\APACinsertmetastar {%
+CajaCostarricensedelSeguroSocial2013}%
+\begin{APACrefauthors}%
+{Caja Costarricense del Seguro Social}.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2013}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{Gu{\'{i}}a para la Organizaci{\'{o}}n de la
+  Atenci{\'{o}}n y Manejo de los Pacientes con Dengue y Dengue Grave}}
+  {{Gu{\'{i}}a para la Organizaci{\'{o}}n de la Atenci{\'{o}}n y Manejo de los
+  Pacientes con Dengue y Dengue Grave}}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{}{}{}{1--61}.
+\PrintBackRefs{\CurrentBib}
+
+\end{thebibliography}
