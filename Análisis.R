@@ -159,13 +159,18 @@ lm.morantest(m1, listw = w.11)
 
 #SAR
 m2 <- spautolm(dengue~tugurio+densidad+residuos+acueducto,data = datos_sp,listw=w.11)
+summary(m2)
+m2 <- spautolm(dengue~residuos+acueducto,data = datos_sp,listw=w.11)
 moran.mc(residuals(m2),w.11, 999)
 
 #CAR
 m3 <- spautolm(dengue~tugurio+densidad+residuos+acueducto,data = datos_sp,listw=w.11,family = "CAR")
+summary(m3)
+m3 <- spautolm(dengue~residuos+acueducto,data = datos_sp,listw=w.11,family = "CAR")
 moran.mc(residuals(m3),w.11, 999)
 
-#Disease Maping
+#Epidem
+
 datos_sp$observados <- datos_sp$casos
 r <- sum(datos_sp$observados)/sum(datos_sp$pob)
 datos_sp$esperados <- datos_sp$pob*r
