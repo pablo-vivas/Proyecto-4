@@ -1,0 +1,8 @@
+Shapefile distritos: http://daticos-geotec.opendata.arcgis.com/
+Tasa de Dengue (100.000 habitantes): Vigilancia, Ministerio de Salud 2019
+Porcentaje de viviendas de tipo tugurio: INEC, censo 2011
+Densidad de la población: INEC, censo 2011
+Porcentaje de viviendas que eliminan los residuos sólidos por camión recolector: INEC, censo 2001
+Porcentaje de viviendas con acueducto: INEC, censo 2011
+
+ 
