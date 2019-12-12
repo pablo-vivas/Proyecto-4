@@ -39,19 +39,26 @@ tm_shape(datos_sf) +
   tm_polygons("casos", palette=c("lightgreen","tomato"), legend.hist=TRUE)
 
 tm_shape(datos_sf) +
-  tm_polygons("dengue",n=9, palette="-RdYlBu")
+  tm_polygons("dengue", palette=c("lightgreen","tomato"), legend.hist=TRUE)
 
 tm_shape(datos_sf) +
-  tm_polygons("tugurio", palette="-RdYlBu")
+  tm_polygons("dengue", palette=c("lightgreen","tomato"),style="quantile")
 
 tm_shape(datos_sf) +
-  tm_polygons("densidad", palette="-RdYlBu")
+  tm_fill("dengue",style="sd",palette=c("lightgreen","tomato")) +
+  tm_borders()
 
 tm_shape(datos_sf) +
-  tm_polygons("residuos", palette="-RdYlBu")
+  tm_polygons("tugurio",n=6, palette="-RdYlBu")
 
 tm_shape(datos_sf) +
-  tm_polygons("acueducto", palette="-RdYlBu")
+  tm_polygons("densidad",n=6, palette="-RdYlBu")
+
+tm_shape(datos_sf) +
+  tm_polygons("residuos",n=6, palette="-RdYlBu")
+
+tm_shape(datos_sf) +
+  tm_polygons("acueducto",n=6, palette="-RdYlBu")
 
 datos_sp <- as(datos_sf,"Spatial")
 datos_sp@bbox <- matrix(c(286803.0, 889158.2, 658864.2,1241118.1),ncol = 2,byrow = F)
