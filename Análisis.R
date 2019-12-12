@@ -14,6 +14,9 @@ library(spatialreg)
 library(epitools)
 library(DCluster)
 library(plotrix)
+library(MASS)
+library(mgcv)
+
 
 indicadores <- read_excel("Datos/Datos Cantonales.xlsx")
 cantones_sp <- read_sf(dsn="Datos",layer = "Cantones")
@@ -27,15 +30,13 @@ rm(cantones_sp,indicadores)
 new_bb = c(286803.0, 889158.2, 658864.2,1241118.1)
 names(new_bb) = c("xmin", "ymin", "xmax", "ymax")
 attr(new_bb, "class") = "bbox"
-
 attr(st_geometry(datos_sf), "bbox") <- new_bb
-
 rm(new_bb)
 
 #Primer ploteo
 #Estadísticas descriptivas
 tm_shape(datos_sf) +
-  tm_polygons("casos",n=9, palette="-RdYlBu")
+  tm_polygons("casos", palette=c("lightgreen","tomato"), legend.hist=TRUE)
 
 tm_shape(datos_sf) +
   tm_polygons("dengue",n=9, palette="-RdYlBu")
@@ -154,7 +155,8 @@ datos_sp@data <- datos_sp@data[,c(1:8)]
 m1 <- lm(dengue~tugurio+densidad+residuos+acueducto,data = datos_sp)
 summary(m1)
 step(m1)
-m1 <- lm(dengue~residuos+acueducto,data = datos_sp)
+m1 <- lm(sqrt(dengue)~residuos+acueducto,data = datos_sp)
+plot(m1)
 lm.morantest(m1, listw = w.11)
 
 #SAR
@@ -169,6 +171,21 @@ summary(m3)
 m3 <- spautolm(dengue~residuos+acueducto,data = datos_sp,listw=w.11,family = "CAR")
 moran.mc(residuals(m3),w.11, 999)
 
+#GLM
+datos_sp$x<-coordinates(datos_sp)[,1]/1000
+datos_sp$y<-coordinates(datos_sp)[,2]/1000
+m4 <- gam(as.integer(casos)~+residuos+acueducto+offset(log(pob))+s(x,y), data=datos_sp, family= "quasipoisson")
+summary(m4)
+moran.mc(residuals(m4),w.11, 999)
+
+#Residuales
+datos_sp$r1 <- residuals(m1)
+datos_sp$r2 <- residuals(m2)
+datos_sp$r3 <- residuals(m3)
+datos_sp$r4 <- residuals(m4)
+
+spplot(datos_sp,c("r2", "r3", "r1","r4"))
+
 #Epidem
 
 datos_sp$observados <- datos_sp$casos
@@ -176,8 +193,7 @@ r <- sum(datos_sp$observados)/sum(datos_sp$pob)
 datos_sp$esperados <- datos_sp$pob*r
 datos_sp$SMR <- datos_sp$observados/datos_sp$esperados
 
-spplot(datos_sp,"observados")
-spplot(datos_sp,"esperados")
+spplot(datos_sp,c("observados","esperados"))
 spplot(datos_sp,"SMR")
 
 int <- pois.exact(datos_sp$SMR)
