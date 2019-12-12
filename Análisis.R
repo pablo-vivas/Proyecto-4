@@ -49,16 +49,16 @@ tm_shape(datos_sf) +
   tm_borders()
 
 tm_shape(datos_sf) +
-  tm_polygons("tugurio",n=6, palette="-RdYlBu")
+  tm_polygons("tugurio",n=6, palette="-Spectral")
 
 tm_shape(datos_sf) +
-  tm_polygons("densidad",n=6, palette="-RdYlBu")
+  tm_polygons("densidad",n=6, palette="-Spectral")
 
 tm_shape(datos_sf) +
-  tm_polygons("residuos",n=6, palette="-RdYlBu")
+  tm_polygons("residuos",n=6, palette="Spectral")
 
 tm_shape(datos_sf) +
-  tm_polygons("acueducto",n=6, palette="-RdYlBu")
+  tm_polygons("acueducto",n=6, palette="Spectral")
 
 datos_sp <- as(datos_sf,"Spatial")
 datos_sp@bbox <- matrix(c(286803.0, 889158.2, 658864.2,1241118.1),ncol = 2,byrow = F)
@@ -75,10 +75,10 @@ nb.3 <- knn2nb(knearneigh(coords, k=2), row.names=id)
 nb.4 <- knn2nb(knearneigh(coords, k=4), row.names=id)
 
 
-plot(datos_sp, axes=TRUE, border="gray")
+plot(datos_sp, axes=F, border="gray")
 plot(nb.1,coords, pch = 20, cex = 0.6, add = T, col = "red")
 
-plot(datos_sp, axes=TRUE, border="gray")
+plot(datos_sp, axes=F, border="gray")
 plot(nb.4,coords, pch = 20, cex = 0.6, add = T, col = "red")
 
 #Matrices de pesos
@@ -163,7 +163,7 @@ m1 <- lm(dengue~tugurio+densidad+residuos+acueducto,data = datos_sp)
 summary(m1)
 step(m1)
 m1 <- lm(sqrt(dengue)~residuos+acueducto,data = datos_sp)
-plot(m1)
+#plot(m1)
 lm.morantest(m1, listw = w.11)
 
 #SAR
@@ -200,8 +200,8 @@ r <- sum(datos_sp$observados)/sum(datos_sp$pob)
 datos_sp$esperados <- datos_sp$pob*r
 datos_sp$SMR <- datos_sp$observados/datos_sp$esperados
 
-spplot(datos_sp,c("observados","esperados"))
-spplot(datos_sp,"SMR")
+spplot(datos_sp,c("observados","esperados"), col.regions=rev(brewer.pal(7, "RdYlGn")), cuts=6)
+spplot(datos_sp,"SMR",col.regions=rev(brewer.pal(7, "RdYlGn")), cuts=6)
 
 int <- pois.exact(datos_sp$SMR)
 int <- cbind(int,datos_sp$NOM_CANT_1)
@@ -213,7 +213,7 @@ plotCI(x = 1:81, y = int$x, ui = int$upper,li = int$lower,pch=18,err="y",
 abline(h=1,col="grey",lty=2,lwd=1.75)
 
 datos_sp$ch <- choynowski(datos_sp$observados,datos_sp$esperados)$pmap
-spplot(datos_sp,"ch")
+spplot(datos_sp,"ch",col.regions=rev(brewer.pal(7, "RdYlGn")), cuts=6)
 
 #Empirical Bayes Estimates
 eb1 <- EBest(datos_sp$observados,datos_sp$esperados)
