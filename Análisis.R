@@ -11,6 +11,9 @@ library(spdep)
 library(tmap)
 library(tmaptools)
 library(spatialreg)
+library(epitools)
+library(DCluster)
+library(plotrix)
 
 indicadores <- read_excel("Datos/Datos Cantonales.xlsx")
 cantones_sp <- read_sf(dsn="Datos",layer = "Cantones")
@@ -28,7 +31,6 @@ attr(new_bb, "class") = "bbox"
 attr(st_geometry(datos_sf), "bbox") <- new_bb
 
 rm(new_bb)
-
 
 #Primer ploteo
 #Estadísticas descriptivas
@@ -67,6 +69,9 @@ nb.4 <- knn2nb(knearneigh(coords, k=4), row.names=id)
 
 plot(datos_sp, axes=TRUE, border="gray")
 plot(nb.1,coords, pch = 20, cex = 0.6, add = T, col = "red")
+
+plot(datos_sp, axes=TRUE, border="gray")
+plot(nb.4,coords, pch = 20, cex = 0.6, add = T, col = "red")
 
 #Matrices de pesos
 w.11 <- nb2listw(nb.1,style = "W")
@@ -141,7 +146,7 @@ spplot(datos_sp, c("Normal", "Aleatorizado", "Punto_de_silla", "Exacto"),
 
 rm(m1,m2,m3,gry)
 
-datos_sp@data <- datos_sp@data[,c(1:7)]
+datos_sp@data <- datos_sp@data[,c(1:8)]
 
 # Modelos
 
@@ -160,6 +165,39 @@ moran.mc(residuals(m2),w.11, 999)
 m3 <- spautolm(dengue~tugurio+densidad+residuos+acueducto,data = datos_sp,listw=w.11,family = "CAR")
 moran.mc(residuals(m3),w.11, 999)
 
-#GLM
-
 #Disease Maping
+datos_sp$observados <- datos_sp$casos
+r <- sum(datos_sp$observados)/sum(datos_sp$pob)
+datos_sp$esperados <- datos_sp$pob*r
+datos_sp$SMR <- datos_sp$observados/datos_sp$esperados
+
+spplot(datos_sp,"observados")
+spplot(datos_sp,"esperados")
+spplot(datos_sp,"SMR")
+
+int <- pois.exact(datos_sp$SMR)
+int <- cbind(int,datos_sp$NOM_CANT_1)
+col <- 1*(int$lower>1)
+col <- ifelse(col==0,"grey","red")
+linea <- ifelse(col=="grey",4,1) 
+plotCI(x = 1:81, y = int$x, ui = int$upper,li = int$lower,pch=18,err="y",
+       col=col,sfrac = 0,xlab="Cantones",ylab="Riesgo Relativo",xaxt="n")
+abline(h=1,col="grey",lty=2,lwd=1.75)
+
+datos_sp$ch <- choynowski(datos_sp$observados,datos_sp$esperados)$pmap
+spplot(datos_sp,"ch")
+
+#Empirical Bayes Estimates
+eb1 <- EBest(datos_sp$observados,datos_sp$esperados)
+unlist(attr(eb1, "parameters"))
+datos_sp$EB_mm <- eb1$estmm
+
+res <- empbaysmooth(datos_sp$observados,datos_sp$esperados)
+unlist(res[2:3])
+datos_sp$EB_ml <- res$smthrr
+eb2 <- EBlocal(datos_sp$observados,datos_sp$esperados, nb.1)
+datos_sp$EB_mm_local <- eb2$est
+
+
+spplot(datos_sp, c("SMR", "EB_ml", "EB_mm", "EB_mm_local"))
+
