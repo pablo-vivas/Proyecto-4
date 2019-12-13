@@ -130,7 +130,7 @@ cols <- rep(1, length(lhlh))
 cols[lhlh == "H.L.TRUE"] <- 2
 cols[lhlh == "L.H.TRUE"] <- 3
 cols[lhlh == "H.H.TRUE"] <- 4
-plot(datos_sp, col=brewer.pal(4, "Accent")[cols])
+plot(datos_sp, col=brewer.pal(4, "Accent")[cols],axes=T)
 legend("topright", legend=c("Ninguno", "HL", "LH", "HH"), fill=brewer.pal(4, "Accent"), bty="n", cex=0.8, y.intersp=0.8)
 title("Casos de influencia")
 
@@ -148,7 +148,7 @@ datos_sp$Punto_de_silla <- m2[,5]
 datos_sp$Exacto <- m3[,5]
 gry <- c(rev(brewer.pal(6, "Reds")), brewer.pal(6, "Blues"))
 
-spplot(datos_sp, c("Normal", "Aleatorizado", "Punto_de_silla", "Exacto"), 
+spplot(datos_sp, c("Punto_de_silla", "Exacto", "Normal", "Aleatorizado"), 
        at=c(0,0.01,0.05,0.1,0.9,0.95,0.99,1), 
        col.regions=colorRampPalette(gry)(7))
 
@@ -186,12 +186,12 @@ summary(m4)
 moran.mc(residuals(m4),w.11, 999)
 
 #Residuales
-datos_sp$r1 <- residuals(m1)
-datos_sp$r2 <- residuals(m2)
-datos_sp$r3 <- residuals(m3)
-datos_sp$r4 <- residuals(m4)
+datos_sp$Lineal <- residuals(m1)
+datos_sp$SAR <- residuals(m2)
+datos_sp$CAR <- residuals(m3)
+datos_sp$GAM <- residuals(m4)
 
-spplot(datos_sp,c("r2", "r3", "r1","r4"))
+spplot(datos_sp,c("SAR", "CAR", "Lineal","GAM"))
 
 #Epidem
 
@@ -213,7 +213,7 @@ plotCI(x = 1:81, y = int$x, ui = int$upper,li = int$lower,pch=18,err="y",
 abline(h=1,col="grey",lty=2,lwd=1.75)
 
 datos_sp$ch <- choynowski(datos_sp$observados,datos_sp$esperados)$pmap
-spplot(datos_sp,"ch",col.regions=rev(brewer.pal(7, "RdYlGn")), cuts=6)
+spplot(datos_sp,"ch")
 
 #Empirical Bayes Estimates
 eb1 <- EBest(datos_sp$observados,datos_sp$esperados)
