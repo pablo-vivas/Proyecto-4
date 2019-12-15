@@ -11,8 +11,6 @@
 \usepackage{apacite}
 \usepackage{multirow}
 \usepackage{graphicx}
-\usepackage{mwe}  
-\usepackage{subcaption}
 \setlength{\parindent}{0em}
 \usepackage[left=3cm,right=3cm,top=2cm,bottom=2cm]{geometry}
 \author{Pablo Vivas Corrales\footnote{\textit{Maestría Académica en Estadística. Universidad de Costa Rica}}\\\textit{pablo.vivas@ucr.ac.cr}}
@@ -37,20 +35,25 @@ Por otro lado se elige realizar técnicas de estadística espacial y de epidemio
 \section{Métodos}
 
 Los datos utilizados utilizados para realizar el análisis espacial del dengue en Costa Rica provienen de dos fuentes. En primer lugar, de la sección de vigilancia del Ministerio de Salud se obtiene la información de los 8.179 casos de dengue para el 2019 por cantón, al igual que la tasa de dengue (100.000 habitantes). Del censo del 2011 realizado por el Instituto Nacional de Estadística y Censos (INEC) se obtiene las siguiente información: porcentaje de viviendas de tipo tugurio, densidad de la población, porcentaje de viviendas que eliminan los residuos sólidos por camión recolector, porcentaje de viviendas con acueducto. Asímismo, de esta misma institución se extrae la población cantonal para el año 2019.
-\newline
+\newpage
 A partir de esos datos se realiza un análisis espacial con el enfoque de estadísticas de áreas ya que todas la información está desagregada a nivel cantonal. Se hace uso de la prueba I de Moran para contrastar la hipótesis de autocorrelación espacial y para cuantificar esta característica, además se utiliza modificaciones a esta prueba para llegar a resultados más robustos. Asimismo se ajusta un modelo lineal y dos modelos autoregresivos (\textit{SAR \& CAR}) que tratan de describir la tasa de dengue por 100.000 habitantes y un modelo lineal generalizado quasi-poisson con un término no paramétrico que trata de describir la cantidad de casos de dengue. En estos modelos se emplea el criterio de AIC para seleccionar las variables que tienen más asociación con el fenómeno investigado. Para los cuatro modelos se realiza la prueba de autocorrelación espacial en sus residuos. También se emplearon técnicas propias del análisis epidemiológico, como el mapa de probabilidades de Choynowski, el cálculo de riesgos relativos y análisis empírico bayesiano.
 \newline
 Para el proccesamiento de los datos se utilizó el software R \cite{R} en su versión 3.6.1 y el IDE RStudio en su versión 1.2.1335. Los paquetes de R utilizados fueron los siguientes: readxl \cite{readxl}, sp \cite{sp}, sf \cite{sf}, tidyverse \cite{tidy}, rgdal \cite{rdal}, RColorBrewer \cite{Rcolor}, spdep \cite{sp}, tmap \cite{tmap}, tmaptools \cite{tmaptools}, spatialreg \cite{sp}, epitools \cite{epitools}, DCluster \cite{dcluster}, plotrix \cite{plotrix}, MASS \cite{MASS} \& mgcv \cite{mgcv}. Toda la información de este artículo (datos, análisis y resultados) se encuentra disponible en un repositorio de Github que se puede accesar mediante esta dirección: https://github.com/pablo-vivas/Proyecto-4.
 \section{Resultados}
 
-\begin{figure}[hbtp]
+Se inicia esta sección con un análisis descriptivo de las variables utilizadas en el artículo. En la figura 1 se presenta la tasa de dengue por 100.000 habitantes.  
+\begin{figure}[h!]
 \centering
-\begin{subfigure}
 \includegraphics[width=.48\textwidth]{F11.pdf}
 \includegraphics[width=.48\textwidth]{F12.pdf}
-\caption{Tasa de dengue (100.000 habitantes) por cantón, 2019.}
+\caption{Tasa de dengue (100.000 habitantes) por cantón y tasa de dengue en quintiles por cantón, 2019.}
 \end{figure}
-
+\newpage
+Se observa valores altos en los cantones específicos de Sarapiquí, La Cruz, Guácimo y Turrialba, además se incluye un histograma. Con este último gráfico se observa la distribución asimétrica positiva de la tasa de dengue, con un valor extremo muy marcado (Sarapiquí) con una tasa de dengue que sobrepasa los 2.000 por cada 100.000 habitantes, razón por la cual se tiene que mitigar este efecto con un mapa de la tasa de dengue por quintiles, que es el segundo mapa de la primera figura. En ese mapa se presenta una situación similar al primero, tasas elevadas en la región noroeste del país junto con regiones costeras del suroeste. En los anexos se incluyen mapas referidos a los casos de dengue y otra sigura que trata de minimizar el efecto del valor extremo mediante el uso de desviaciones estándar.
+\newline
+La figura 8 en la sección de anexos presenta la distribución espacial de las covariables utilizadas en el artículo. Dentro de las características más importantes se tiene: porcentajes altos en las zonas de Guanacaste y otras de Alajuela en cuanto a porcentaje de viviendas de tipo tugurio en el 2011, pocos cantones con alta densidad de la población, en la parte central del país  existe una mayor concentración de viviendas que eliminan los residuos sólidos por camión recolector, además las zonas de Guatuso y Upala tienen los porcentajes más bajos en esta variable. Por último en Heredia Puntarenas y Limón se concentran los porcentajes más bajos de viviendas con acueducto, información relevante es que los cantones de Talamanca y Sarapiquí poseen la mayor cantidad de viviendas sin acueducto.
+\newline
+Para la definición de la estructura de vecinos y la matriz de pesos, al no tener una referencia clara, se consideran varios métodos. En estructuras de vecinos, se trabajan los métodos de: reina, torre y vecinos más cercanos (Knn) considerando 2 vecinos y 4 vecinos. En la figura 2 se muestra el método de la reina y 4 vecinos más cercanos. Por otra parte, para la matriz de pesos se consideran las estructuras W, B y S, dando como resultado un total de 12 posibles combinaciones de vecinos y matriz de pesos. Se realiza la prueba de I de moran para cada una de estas combinaciones y los resultados se presentan en la tabla 1.
 \begin{figure}[hbtp]
 \centering
 \includegraphics[width=.48\textwidth]{F21.pdf}
@@ -68,6 +71,7 @@ Reina&0,009&0,007&0,006\\
 Torre&0,011&0,008&0,008\\
 Knn(2)&0,018&0,018&0,018\\
 Knn(4)&0,026&0,026&0,026\\ \hline
+\caption{Valores-p para la prueba de autocorrelación espacial según la estrcutura de vecinos y la matriz de pesos}
 \end{tabular}
 \end{table}
 
