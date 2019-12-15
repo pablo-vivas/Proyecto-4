@@ -1,20 +1,35 @@
 # Análisis espacial del dengue en Costa Rica 
 
-Este repositorio contiene toda la información referida al último proyecto del curso SP-1649 Tópicos de Estadística Espacial Aplicada, desarrollado por el estudiante de la Maestría Académica en Estadística: Pablo Vivas Corrales(<pablo.vivas@ucr.ac.cr>) para el segundo semestre del 2019. El proyecto cuenta además con un video que se puede visualizar mediante este link: [https://www.youtube.com/watch?v=FHbZQ6Yuass](https://www.youtube.com/watch?v=FHbZQ6Yuass).
+Este repositorio contiene toda la información referida al último proyecto del curso SP-1649: Tópicos de Estadística Espacial Aplicada, desarrollado por el estudiante de la Maestría Académica en Estadística: Pablo Vivas Corrales(<pablo.vivas@ucr.ac.cr>) para el segundo semestre del 2019. El proyecto cuenta además con un video que se puede visualizar mediante este link: [https://www.youtube.com/watch?v=FHbZQ6Yuass](https://www.youtube.com/watch?v=FHbZQ6Yuass).
 
 
 ## Archivos de repositorio
+
+* Archivos
+  * [`Análisis.R`](#análisis)
+  * [`Escrito.pdf`](#escrito)
+  * [LICENSE](#licencia)
 
 * Carpetas
   * [Bibliografía](#bibliografía)
   * [Datos](#datos)
   * [Figuras](#figuras)
   * [Trabajo escrito](#trabajo-escrito)
-* Archivos
-  * [`Análisis.R`](#análisis)
-  * [`Escrito.pdf`](#escrito)
-  * [LICENSE](#licencia)
 
+
+### Archivos
+---
+### Análisis
+
+El archivo `análisis.r` es un documento donde se presenta el código utilizado para generar los resultados de este análisis. Comprende desde la lectura de los datos hasta la creación de las figuras.
+
+### Escrito
+
+### Licencia
+
+El código usado y presentado en este repositorio tiene una licencia [MIT](https://opensource.org/licenses/MIT)
+
+---
 ### Carpetas
 ---
 ### Bibliografía
@@ -27,13 +42,13 @@ Aquí se almacenan los datos utilizados en el análisis. Destacan principalmente
 
 * `Cantones`: Información geográfica de la división territorial de Costa Rica en cantones. Esta información se obtuvo de la página [http://daticos-geotec.opendata.arcgis.com](http://daticos-geotec.opendata.arcgis.com/datasets/249bc8711c33493a90b292b55ed3abad_0)
 * `Datos cantonales.xlsx`: Compendio de indicadores cantonales que se utilizaron en el análisis, junto con la información espacial. Los indicadores utilizados son:
-  * `pob`: Población del 2019. INEC. [LINK]()
-  * `casos`: Casos de dengue. Ministerio de Salud. [LINK]()
-  * `dengue`: Tasa de Dengue (100.000 habitantes) del 2019. Ministerio de Salud. [LINK]()
-  * `tugurio`: Porcentaje de viviendas de tipo tugurio en el 2011. INEC. [LINK]()
-  * `densidad`: Densidad de la población del 2011. INEC. [LINK]()
-  * `residuos`: Porcentaje de viviendas que eliminan los residuos sólidos por camión recolector en el 2011. INEC. [LINK]()
-  * `acueducto`: Porcentaje de viviendas con acueducto en el 2011. INEC. [LINK]()
+  * `pob`: Población del 2019. INEC. [LINK](http://services.inec.go.cr/proyeccionpoblacion/frmproyec.aspx)
+  * `casos`: Casos de dengue. Ministerio de Salud. [LINK](https://www.ministeriodesalud.go.cr/index.php/vigilancia-de-la-salud/analisis-de-situacion-de-salud)
+  * `dengue`: Tasa de Dengue (100.000 habitantes) del 2019. Ministerio de Salud. [LINK](https://www.ministeriodesalud.go.cr/index.php/vigilancia-de-la-salud/analisis-de-situacion-de-salud)
+  * `tugurio`: Porcentaje de viviendas de tipo tugurio en el 2011. INEC. [LINK](http://sistemas.inec.cr:8080/bincri/RpWebEngine.exe/Portal?BASE=2011&lang=esp)
+  * `densidad`: Densidad de la población del 2011. INEC. [LINK](http://sistemas.inec.cr:8080/bincri/RpWebEngine.exe/Portal?BASE=2011&lang=esp)
+  * `residuos`: Porcentaje de viviendas que eliminan los residuos sólidos por camión recolector en el 2011. INEC. [LINK](http://sistemas.inec.cr:8080/bincri/RpWebEngine.exe/Portal?BASE=2011&lang=esp)
+  * `acueducto`: Porcentaje de viviendas con acueducto en el 2011. INEC. [LINK](http://sistemas.inec.cr:8080/bincri/RpWebEngine.exe/Portal?BASE=2011&lang=esp)
 
 ### Figuras
 
