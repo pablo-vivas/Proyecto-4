@@ -58,16 +58,25 @@ Aquí se almacenan los datos utilizados en el análisis. Destacan principalmente
 
 Contiene las figuras creadas en la investigación. Se describe cada una de ellas: 
 
-* `Figura 1.pdf`: 
-* `Figura 2.pdf`: 
-* `Figura 3.pdf`: 
-* `Figura 4.pdf`: 
-* `Figura 5.pdf`: 
-* `Figura 6.pdf`: 
-* `Figura 7.pdf`: 
-* `Figura 8.pdf`: 
-* `Figura 9.pdf`: 
-* `Figura 10.pdf`: 
+* `F1.1.pdf`: 
+* `F1.2.pdf`: 
+* `F2.1.pdf`: 
+* `F2.2.pdf`: 
+* `F3.1.pdf`: 
+* `F3.2.pdf`: 
+* `F4.pdf`: 
+* `F5.pdf`: 
+* `F6.pdf`: 
+* `FA1.pdf`: 
+* `FA2.pdf`: 
+* `FA3.pdf`: 
+* `FA4.pdf`: 
+* `FA5.pdf`: 
+* `FA6.pdf`: 
+* `FA7.pdf`: 
+* `FA8.pdf`: 
+* `FA9.pdf`: 
+* `FA10.pdf`: 
 
 ### Trabajo Escrito
 
