@@ -35,28 +35,28 @@ rm(new_bb)
 
 #Primer ploteo
 #Estadísticas descriptivas
-pdf("Figuras/F1.1.pdf")
+pdf("Trabajo Escrito/F11.pdf")
 
 tm_shape(datos_sf) +
   tm_polygons("dengue", palette=c("lightgreen","tomato"), legend.hist=TRUE)
 
 dev.off()
 
-pdf("Figuras/F1.2.pdf")
+pdf("Trabajo Escrito/F12.pdf")
 
 tm_shape(datos_sf) +
   tm_polygons("dengue", palette=c("lightgreen","tomato"),style="quantile")
 
 dev.off()
 
-pdf("Figuras/FA1.pdf")
+pdf("Trabajo Escrito/FA1.pdf")
 
 tm_shape(datos_sf) +
   tm_polygons("casos", palette=c("lightgreen","tomato"), legend.hist=TRUE)
 
 dev.off()
 
-pdf("Figuras/FA2.pdf")
+pdf("Trabajo Escrito/FA2.pdf")
 
 tm_shape(datos_sf) +
   tm_fill("dengue",style="sd",palette=c("lightgreen","tomato")) +
@@ -64,28 +64,28 @@ tm_shape(datos_sf) +
 
 dev.off()
 
-pdf("Figuras/FA3.pdf")
+pdf("Trabajo Escrito/FA3.pdf")
 
 tm_shape(datos_sf) +
   tm_polygons("tugurio",n=6, palette="-Spectral")
 
 dev.off()
 
-pdf("Figuras/FA4.pdf")
+pdf("Trabajo Escrito/FA4.pdf")
 
 tm_shape(datos_sf) +
   tm_polygons("densidad",n=6, palette="-Spectral")
 
 dev.off()
 
-pdf("Figuras/FA5.pdf")
+pdf("Trabajo Escrito/FA5.pdf")
 
 tm_shape(datos_sf) +
   tm_polygons("residuos",n=6, palette="Spectral")
 
 dev.off()
 
-pdf("Figuras/FA6.pdf")
+pdf("Trabajo Escrito/FA6.pdf")
 
 tm_shape(datos_sf) +
   tm_polygons("acueducto",n=6, palette="Spectral")
@@ -106,14 +106,14 @@ nb.2 <- poly2nb(datos_sp,queen = F)
 nb.3 <- knn2nb(knearneigh(coords, k=2), row.names=id)
 nb.4 <- knn2nb(knearneigh(coords, k=4), row.names=id)
 
-pdf("Figuras/F2.1.pdf")
+pdf("Trabajo Escrito/F21.pdf")
 
 plot(datos_sp, axes=F, border="gray")
 plot(nb.1,coords, pch = 20, cex = 0.6, add = T, col = "red")
 
 dev.off()
 
-pdf("Figuras/F2.2.pdf")
+pdf("Trabajo Escrito/F22.pdf")
 
 plot(datos_sp, axes=F, border="gray")
 plot(nb.4,coords, pch = 20, cex = 0.6, add = T, col = "red")
@@ -156,7 +156,7 @@ rm(nb.2,nb.3,nb.4,w.12,w.13,w.21,w.22,w.23,w.31,w.32,w.33,w.41,w.42,w.43,coords,
 
 #Casos de influencia
 
-pdf("Figuras/F3.1.pdf")
+pdf("Trabajo Escrito/F31.pdf")
 
 msp <- moran.plot(datos_sp$dengue, listw=w.11, quiet=TRUE,xlab="Casos de Dengue",ylab = "Casos espacialmente rezagados")
 
@@ -173,7 +173,7 @@ cols[lhlh == "H.L.TRUE"] <- 2
 cols[lhlh == "L.H.TRUE"] <- 3
 cols[lhlh == "H.H.TRUE"] <- 4
 
-pdf("Figuras/F3.2.pdf")
+pdf("Trabajo Escrito/F32.pdf")
 
 plot(datos_sp, col=brewer.pal(4, "Accent")[cols],axes=T,xaxt="n",yaxt="n")
 legend("topright", legend=c("Ninguno", "HL", "LH", "HH"), fill=brewer.pal(4, "Accent"), bty="n", cex=0.8, y.intersp=0.8)
@@ -194,7 +194,7 @@ datos_sp$Punto_de_silla <- m2[,5]
 datos_sp$Exacto <- m3[,5]
 gry <- c(rev(brewer.pal(6, "Reds")), brewer.pal(6, "Blues"))
 
-pdf("Figuras/FA7.pdf")
+pdf("Trabajo Escrito/FA7.pdf")
 
 spplot(datos_sp, c("Punto_de_silla", "Exacto", "Normal", "Aleatorizado"), 
        at=c(0,0.01,0.05,0.1,0.9,0.95,0.99,1), 
@@ -244,7 +244,7 @@ datos_sp$SAR <- residuals(m2)
 datos_sp$CAR <- residuals(m3)
 datos_sp$GAM <- residuals(m4)
 
-pdf("Figuras/F4.pdf")
+pdf("Trabajo Escrito/F4.pdf")
 
 spplot(datos_sp,c("SAR", "CAR", "Lineal","GAM"))
 
@@ -256,13 +256,13 @@ r <- sum(datos_sp$observados)/sum(datos_sp$pob)
 datos_sp$esperados <- datos_sp$pob*r
 datos_sp$SMR <- datos_sp$observados/datos_sp$esperados
 
-pdf("Figuras/FA8.pdf")
+pdf("Trabajo Escrito/FA8.pdf")
 
 spplot(datos_sp,c("observados","esperados"), col.regions=rev(brewer.pal(7, "RdYlGn")), cuts=6)
 
 dev.off()
 
-pdf("Figuras/F5.pdf")
+pdf("Trabajo Escrito/F5.pdf")
 
 spplot(datos_sp,"SMR",col.regions=rev(brewer.pal(7, "RdYlGn")), cuts=6)
 
@@ -274,7 +274,7 @@ col <- 1*(int$lower>1)
 col <- ifelse(col==0,"grey","red")
 linea <- ifelse(col=="grey",4,1) 
 
-pdf("Figuras/F6.pdf")
+pdf("Trabajo Escrito/F6.pdf")
 
 plotCI(x = 1:81, y = int$x, ui = int$upper,li = int$lower,pch=18,err="y",
        col=col,sfrac = 0,xlab="Cantones",ylab="Riesgo Relativo",xaxt="n")
@@ -284,7 +284,7 @@ dev.off()
 
 datos_sp$ch <- choynowski(datos_sp$observados,datos_sp$esperados)$pmap
 
-pdf("Figuras/FA9.pdf")
+pdf("Trabajo Escrito/FA9.pdf")
 
 spplot(datos_sp,"ch")
 
@@ -301,7 +301,7 @@ datos_sp$EB_ml <- res$smthrr
 eb2 <- EBlocal(datos_sp$observados,datos_sp$esperados, nb.1)
 datos_sp$EB_mm_local <- eb2$est
 
-pdf("Figuras/FA10.pdf")
+pdf("Trabajo Escrito/FA10.pdf")
 
 spplot(datos_sp, c("SMR", "EB_ml", "EB_mm", "EB_mm_local"))
 

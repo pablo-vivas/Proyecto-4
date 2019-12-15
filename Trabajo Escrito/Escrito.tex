@@ -11,6 +11,7 @@
 \usepackage{apacite}
 \usepackage{multirow}
 \usepackage{multirow}
+\usepackage{graphicx}
 \setlength{\parindent}{0em}
 \usepackage[left=3cm,right=3cm,top=2cm,bottom=2cm]{geometry}
 \author{Pablo Vivas Corrales\footnote{\textit{Maestría Académica en Estadística. Universidad de Costa Rica}}\\\textit{pablo.vivas@ucr.ac.cr}}
@@ -31,6 +32,15 @@ El dengue es una enfermedad aguda febril, producida por un virus ARN de la famil
 Los datos utilizados utilizados para realizar el análisis espacial del dengue en Costa Rica provienen de dos fuentes. En primer lugar, de la sección de vigilancia del Ministerio de Salud se obtiene la información de los casos de dengue para el 2019 por cantón. Los paquetes de R \cite{R} de readxl \cite{readxl}, sp \cite{sp}, sf \cite{sf}, tidyverse \cite{tidy}, rgdal \cite{rdal}, RColorBrewer \cite{Rcolor}, spdep \cite{sp}, tmap \cite{tmap}, tmaptools \cite{tmaptools}, spatialreg \cite{sp}, epitools \cite{epitools}, DCluster \cite{dcluster}, plotrix \cite{plotrix}, MASS \cite{MASS} \& mgcv \cite{mgcv}.
 \section{Resultados}
 
+\begin{figure}[hbtp]
+\centering
+\includegraphics[width=.48\textwidth]{F11.pdf}
+\includegraphics[width=.48\textwidth]{F12.pdf}
+\caption{Tasa de dengue (100.000 habitantes) por cantón, 2019.}
+\end{figure}
+
+
+
 \begin{table}[h]
 \centering
 \begin{tabular}{cccc}
@@ -47,10 +57,50 @@ Knn(4)&0,026&0,026&0,026\\ \hline
 \section{Conclusiones}
 
 \section{Anexos}
-Aquí se ponene los anexos
+
+\begin{figure}[hbtp]
+\centering
+\includegraphics[width=.48\textwidth]{FA1.pdf}
+\includegraphics[width=.48\textwidth]{FA2.pdf}
+\caption{Casos de dengue (100.000 habitantes) por cantón, 2019.}
+\end{figure}
+
+\begin{figure}[hbtp]
+\centering
+\includegraphics[width=.48\textwidth]{FA3.pdf}
+\includegraphics[width=.48\textwidth]{FA4.pdf}
+\includegraphics[width=.48\textwidth]{FA5.pdf}
+\includegraphics[width=.48\textwidth]{FA6.pdf}
+\caption{Estadísticos descriptivos}
+\end{figure}
+
+\begin{figure}[hbtp]
+\centering
+\includegraphics[scale=0.75]{FA7.pdf}
+\caption{Distintas pruebas de Moran}
+\end{figure}
+
+\begin{figure}[hbtp]
+\centering
+\includegraphics[scale=0.75]{FA8.pdf}
+\caption{Valores Observados vs Esperados}
+\end{figure}
+
+\begin{figure}[hbtp]
+\centering
+\includegraphics[scale=0.75]{FA9.pdf}
+\caption{Mapa de probabilidad de Chownoysky}
+\end{figure}
+
+\begin{figure}[hbtp]
+\centering
+\includegraphics[scale=0.75]{FA10.pdf}
+\caption{Distintas pruebas de Moran}
+\end{figure}
 
 %%Bibliografía
 \bibliographystyle{apacite}
 \bibliography{Referencias}
 \end{document}
+
 
