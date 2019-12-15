@@ -21,9 +21,11 @@ Este repositorio contiene toda la información referida al último proyecto del 
 ---
 ### Análisis
 
-El archivo `análisis.r` es un documento donde se presenta el código utilizado para generar los resultados de este análisis. Comprende desde la lectura de los datos hasta la creación de las figuras.
+El archivo `análisis.r` es un documento donde se presenta el código `R` utilizado para generar los resultados de este artículo. Comprende desde la lectura de los datos hasta la creación de los modelos y las figuras. Se utilizó el software R en su versión 3.6.1 (2019-07-05) y el IDE RStudio en su versión 1.2.1335.
 
 ### Escrito
+
+Es una copia del archivo `Escrito.pdf` de la carpeta [Trabajo Escrito](#trabajo-escrito) donde se presenta el artículo. Se pone a disposición este archivo, para mayor facilidad en la búsqueda de la versión final este artículo. 
 
 ### Licencia
 
@@ -34,7 +36,7 @@ El código usado y presentado en este repositorio tiene una licencia [MIT](https
 ---
 ### Bibliografía
 
-En esta carpeta se encuentran archivos `.pdf` que se utilizaron como principales referencias bibliográficas para el proyecto. Estas referencias fueron introducidas al software [Mendeley](https://www.mendeley.com/?interaction_required=true) para crear el archivo `Referencias.bib` utilizado para hacer las citas bibliográficas correspondientes.
+En esta carpeta se encuentran archivos `.pdf` que se utilizaron como principales referencias bibliográficas para el proyecto. Estas referencias fueron introducidas al software [Mendeley](https://www.mendeley.com/?interaction_required=true) para crear el archivo `Referencias.bib` de la carpeta [Trabajo Escrito](#trabajo-escrito) utilizado para hacer las citas bibliográficas correspondientes.
 
 ### Datos
 
@@ -67,14 +69,7 @@ Contiene las figuras creadas en la investigación. Se describe cada una de ellas
 
 ### Trabajo Escrito
 
-En esta carpeta se almacenan todos los archivos 
+En esta carpeta se almacenan todos los archivos necesarios para la creación del documento `Escrito.pdf`. Este árchivos se crearon mediante el software [TexMaker](https://www.xm1math.net/texmaker/)
 
 ---
 
-### Archivos
----
-### Análisis
-
-### Escrito
-
-### Licencia
