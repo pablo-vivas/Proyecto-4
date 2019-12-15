@@ -69,7 +69,7 @@ Contiene las figuras creadas en la investigación. Se describe cada una de ellas
 
 ### Trabajo Escrito
 
-En esta carpeta se almacenan todos los archivos necesarios para la creación del documento `Escrito.pdf`. Este árchivos se crearon mediante el software [TexMaker](https://www.xm1math.net/texmaker/)
+En esta carpeta se almacenan todos los archivos necesarios para la creación del documento `Escrito.pdf`. Estos archivos se crearon mediante el software [TexMaker](https://www.xm1math.net/texmaker/)
 
 ---
 
