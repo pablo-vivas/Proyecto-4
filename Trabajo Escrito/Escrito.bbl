@@ -1,6 +1,36 @@
 \begin{thebibliography}{}
 
 \bibitem [\protect \citeauthoryear {%
+{Antulio Hoyos Rivera}%
+, {Antonio P{\'{e}}rez Rodr{\'{i}}guez}%
+\BCBL {}\ \BBA {} {Edelsys Hern{\'{a}}ndez Mel{\'{e}}ndrez}%
+}{%
+{Antulio Hoyos Rivera}%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2011}}%
+}]{%
+factores}
+\APACinsertmetastar {%
+factores}%
+\begin{APACrefauthors}%
+{Antulio Hoyos Rivera}, C.%
+, {Antonio P{\'{e}}rez Rodr{\'{i}}guez}, C.%
+\BCBL {}\ \BBA {} {Edelsys Hern{\'{a}}ndez Mel{\'{e}}ndrez}, C.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2011}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{Factores de riesgos asociados a la infecci{\'{o}}n por
+  dengue en San Mateo, Anzo{\'{a}}tegui, Venezuela}} {{Factores de riesgos
+  asociados a la infecci{\'{o}}n por dengue en San Mateo, Anzo{\'{a}}tegui,
+  Venezuela}}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Revista Cubana de Medicina General
+  Integral}{27}{3}{388--395}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
 Aragon%
 }{%
 Aragon%
@@ -109,6 +139,32 @@ CajaCostarricensedelSeguroSocial2013}%
   Pacientes con Dengue y Dengue Grave}}.{\BBCQ}
 \newblock
 \APACjournalVolNumPages{}{}{}{1--61}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+{Fabio Sánchez Peña}%
+}{%
+{Fabio Sánchez Peña}%
+}{%
+{\protect \APACyear {{\protect \bibnodate {}}}}%
+}]{%
+ucrea}
+\APACinsertmetastar {%
+ucrea}%
+\begin{APACrefauthors}%
+{Fabio Sánchez Peña}.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{{\protect \bibnodate {}}}{}{}.
+\newblock
+\APACrefbtitle {{Mathematical Models for the Development of Prevention/Control
+  Strategies of Aedes Aegypti in Costa Rica},
+  url={http://www.ucrea.ucr.ac.cr/proyectos-vigentes/aedes-aegypti/},
+  journal={UCREA}.} {{Mathematical Models for the Development of
+  Prevention/Control Strategies of Aedes Aegypti in Costa Rica},
+  url={http://www.ucrea.ucr.ac.cr/proyectos-vigentes/aedes-aegypti/},
+  journal={UCREA}.}
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%

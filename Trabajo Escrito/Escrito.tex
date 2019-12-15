@@ -10,8 +10,9 @@
 \usepackage{kpfonts}
 \usepackage{apacite}
 \usepackage{multirow}
-\usepackage{multirow}
 \usepackage{graphicx}
+\usepackage{mwe}  
+\usepackage{subcaption}
 \setlength{\parindent}{0em}
 \usepackage[left=3cm,right=3cm,top=2cm,bottom=2cm]{geometry}
 \author{Pablo Vivas Corrales\footnote{\textit{Maestría Académica en Estadística. Universidad de Costa Rica}}\\\textit{pablo.vivas@ucr.ac.cr}}
@@ -21,25 +22,30 @@
 \maketitle
 \begin{abstract}
 \noindent
-La posición geográfica de Costa Rica posibilita al vector \textit{Aedes} la propagación de la enfermedad conocida como dengue. Solo en el año 2019 la sección de vigilancia del Ministerio de Salud reportó más de 8000 mil casos de esta enfermedad, siendo el cantón de Sarapiquí de Heredia un valor extremo (1816 casos registrados). Con esos datos e información obtenida del Instituo Nacional de Estadistica y Censos (INEC) se realizó un análisis espacial con los siguientes objetivos: (1) identificar la existencia de agrupaciones espaciales en los cantones de Costa Rica (2) identificar indicadores que están asociados con la aparición del dengue y (3) calcular el riesgo que tienen los habitantes de los cantones costarricenses de tener esta enfermedad. Se hace uso de la prueba I de Moran para cuantificar la autocorrelación espacial. Asimismo se ajusta un modelo lineal, dos modelos autoregresivos (SAR \& CAR) y un modelo lineal generalizado con un término no paramétrico, siendo este último el que posee un $R^{2}$ más elevado (93\%). Se utilizan técnicas propias del análisis epidemiológico, como el mapa de probabilidades de Choynowski y el cálculo de riesgos relativos, donde resultan significativos los cantones de: Sarapiquí, Guácimo, La Cruz, Turrialba, Atnas, Montes de Oro, Garabito \& Pococí. Se concluye con un análisis empírico bayesiano.\\
-\textbf{Palabras clave:} \textit{Dengue, Cantones de Costa Rica, Modelos Autoregresivos \& Análisis Epidemiológico} 
+La posición geográfica de Costa Rica posibilita al vector \textit{Aedes} la propagación de la enfermedad conocida como dengue. Solo en el año 2019 la sección de vigilancia del Ministerio de Salud reportó más de 8000 mil casos de esta enfermedad, siendo el cantón de Sarapiquí de Heredia un valor extremo (1816 casos registrados). Con esos datos e información obtenida del Instituo Nacional de Estadistica y Censos (INEC) se realizó un análisis espacial con los siguientes objetivos: (1) identificar la existencia de agrupaciones espaciales en los cantones de Costa Rica (2) determinar indicadores que están asociados con la aparición del dengue y (3) calcular el riesgo que tienen los habitantes de los cantones costarricenses de tener esta enfermedad. Se hace uso de la prueba I de Moran para contrastar la hipótesis de autocorrelación espacial. Asimismo se ajusta un modelo lineal, dos modelos autoregresivos (\textit{SAR \& CAR}) y un modelo lineal generalizado con un término no paramétrico, siendo este último el que posee un $R^{2}$ más elevado (93\%). Se utilizan técnicas propias del análisis epidemiológico, como el mapa de probabilidades de Choynowski y el cálculo de riesgos relativos, donde resultan significativos los cantones de: Sarapiquí, Guácimo, La Cruz, Turrialba, Atnas, Montes de Oro, Garabito \& Pococí. Se concluye con un análisis empírico bayesiano.\\
+\textbf{Palabras clave:} \textit{Dengue, Análisis espacial, Modelos Autoregresivos \& Análisis Epidemiológico} 
 \end{abstract}
 \section{Introducción}
 
 El dengue es una enfermedad viral transmitida por mosquitos que se ha propagado rápidamente en todas las regiones de la Organización Mundial de la Salud (OMS) en los últimos años. El virus del dengue es transmitido por mosquitos hembras, principalmente de la especie \textit{Aedes aegypti}. Este mosquito también es vector de virus como chikungunya, fiebre amarilla y zika. El dengue está muy extendido en las regiones tropicales y subtropicales \cite{OMS}. La incidencia del dengue ha crecido dramáticamente en todo el mundo en las últimas décadas. La gran mayoría de los casos son leves y autogestionados, y por lo tanto, el número real de casos de dengue no se informa. Muchos casos también se diagnostican erróneamente como otras enfermedades febriles \cite{Waggoner2016}.\\
-
-El dengue causa un amplio espectro de enfermedades. Esto puede variar desde una enfermedad subclínica (las personas pueden no saber que incluso están infectadas) hasta síntomas severos similares a la gripe en las personas infectadas. Aunque es menos común, algunas personas desarrollan dengue severo, que puede ser cualquier cantidad de complicaciones asociadas con sangrado severo, deterioro de órganos y / o pérdida de plasma. El dengue grave tiene un mayor riesgo de muerte cuando no se maneja adecuadamente. Hoy en día, el dengue grave afecta a la mayoría de los países asiáticos y latinoamericanos y se ha convertido en una de las principales causas de hospitalización y muerte entre niños y adultos en estas regiones.
-
-
-
-El dengue es una enfermedad aguda febril, producida por un virus ARN de la familia \textit{Flaviridae}, cuyo único reservorio es el hombre. Existen 4 serotipos distintos DEN- 1, DEN- 2, DEN- 3 y DEN- 4. Es más predominante en las regiones tropicales. El virus se transmite por la picadura de la hembra del mosquito \textit{Aedes sp.} Ésta adquiere la infección al alimentarse de un paciente en fase virémica. El virus se multiplica y alcanza las glándulas salivares de la mosquito hembra, donde se mantiene de por vida, por lo que puede infectar a varias personas. Existen varios tipos de Aedes: Ae. aegypti, Ae. albopictus, Ae. meiovittatus, Ae. scutellaris .etc. El más importante es Ae. aegypti, que se alimenta principalmente sangre humana y lo hace de día. El virus es altamente transmisible cuando la infestación por el vector es alta, lo que puede producir epidemias de dengue con alta morbilidad y mortalidad, en su forma grave. La infección que produce resulta en un amplio espectro de presentaciones clínicas, que van desde formas asintomáticas, indiferenciadas y leves hasta cuadros graves con compromiso vascular, coagulación y órganos blancos.Puede haber transmisión por la picadura directa del mosquito, vía vertical (madre-hijo,tercer trimestre de embarazo) o vía transfusional \cite{CajaCostarricensedelSeguroSocial2013}.
+\newline
+El virus es altamente transmisible cuando la infestación por el vector es alta, lo que puede producir epidemias de dengue con alta morbilidad y mortalidad, en su forma grave. La infección que produce resulta en un amplio espectro de presentaciones clínicas, que van desde formas asintomáticas, indiferenciadas y leves hasta cuadros graves con compromiso vascular, coagulación y órganos blancos.Puede haber transmisión por la picadura directa del mosquito, vía vertical (madre-hijo,tercer trimestre de embarazo) o vía transfusional \cite{CajaCostarricensedelSeguroSocial2013}.
+\newline
+Los factores de riesgo en la aparición y distribución de la enfermedad se agrupan, principalmente en 2: ambientales y sociales. Sociales como una alta densidad de la población, agua almacenada, ausencia de abastecimiento de agua corriente individual, entre otras. Mientras que ambientales o específicamente geográficos, por localizarse en una zona que favorece la vida del vector que propaga esta enfermedad \cite{factores}, como es el caso de Costa Rica. Solo en el año 2019 la sección de vigilancia del Ministerio de Salud reportó más de 8.000 mil casos de esta enfermedad, siendo el cantón de Sarapiquí de Heredia un valor extremo (1816 casos registrados). Por otro lado, al realizar una agregación por provincia, se destacan las provincias de Heredia y de Limón con 1985 y 1738 casos respectivamente. 
+\newline
+Por otro lado se elige realizar técnicas de estadística espacial y de epidemiología pues según \cite{sp} las herramientas de estadística espaciale se han utilizado ampliamente en epidemiología al estudio de la distribución de enfermedades. Específicamente, en cuanto al vector \textit{Aedes aegypti} , existe un proyecto costarricense llamado\textit{Mathematical Models for the Development of Prevention/Control Strategies of Aedes Aegypti in Costa Rica} donde los investigadores, en su mayoría matemáticos, crean modelos para ampliar aún más la toma de decisiones de los funcionarios de salud pública con respecto a la propagación del dengue, chikungunya, zika en Costa Rica mediante la identificación y caracterización de métodos de control de Aedes aegypti \cite{ucrea}, sin embargo el enfoque de dicho estudio no se toma en consideración en este artículo pues es un proyecto integral con distintos objetivos. En este artículo se trabaja de un forma más descriptiva con los siguientes objetivos: (1) identificar la existencia de agrupaciones espaciales en los cantones de Costa Rica (2) determinar indicadores que están asociados con la aparición del dengue y (3) calcular el riesgo que tienen los habitantes de los cantones costarricenses de tener esta enfermedad.
 \section{Métodos}
 
-Los datos utilizados utilizados para realizar el análisis espacial del dengue en Costa Rica provienen de dos fuentes. En primer lugar, de la sección de vigilancia del Ministerio de Salud se obtiene la información de los casos de dengue para el 2019 por cantón. Los paquetes de R \cite{R} de readxl \cite{readxl}, sp \cite{sp}, sf \cite{sf}, tidyverse \cite{tidy}, rgdal \cite{rdal}, RColorBrewer \cite{Rcolor}, spdep \cite{sp}, tmap \cite{tmap}, tmaptools \cite{tmaptools}, spatialreg \cite{sp}, epitools \cite{epitools}, DCluster \cite{dcluster}, plotrix \cite{plotrix}, MASS \cite{MASS} \& mgcv \cite{mgcv}.
+Los datos utilizados utilizados para realizar el análisis espacial del dengue en Costa Rica provienen de dos fuentes. En primer lugar, de la sección de vigilancia del Ministerio de Salud se obtiene la información de los 8.179 casos de dengue para el 2019 por cantón, al igual que la tasa de dengue (100.000 habitantes). Del censo del 2011 realizado por el Instituto Nacional de Estadística y Censos (INEC) se obtiene las siguiente información: porcentaje de viviendas de tipo tugurio, densidad de la población, porcentaje de viviendas que eliminan los residuos sólidos por camión recolector, porcentaje de viviendas con acueducto. Asímismo, de esta misma institución se extrae la población cantonal para el año 2019.
+\newline
+A partir de esos datos se realiza un análisis espacial con el enfoque de estadísticas de áreas ya que todas la información está desagregada a nivel cantonal. Se hace uso de la prueba I de Moran para contrastar la hipótesis de autocorrelación espacial y para cuantificar esta característica, además se utiliza modificaciones a esta prueba para llegar a resultados más robustos. Asimismo se ajusta un modelo lineal y dos modelos autoregresivos (\textit{SAR \& CAR}) que tratan de describir la tasa de dengue por 100.000 habitantes y un modelo lineal generalizado quasi-poisson con un término no paramétrico que trata de describir la cantidad de casos de dengue. En estos modelos se emplea el criterio de AIC para seleccionar las variables que tienen más asociación con el fenómeno investigado. Para los cuatro modelos se realiza la prueba de autocorrelación espacial en sus residuos. También se emplearon técnicas propias del análisis epidemiológico, como el mapa de probabilidades de Choynowski, el cálculo de riesgos relativos y análisis empírico bayesiano.
+\newline
+Para el proccesamiento de los datos se utilizó el software R \cite{R} en su versión 3.6.1 y el IDE RStudio en su versión 1.2.1335. Los paquetes de R utilizados fueron los siguientes: readxl \cite{readxl}, sp \cite{sp}, sf \cite{sf}, tidyverse \cite{tidy}, rgdal \cite{rdal}, RColorBrewer \cite{Rcolor}, spdep \cite{sp}, tmap \cite{tmap}, tmaptools \cite{tmaptools}, spatialreg \cite{sp}, epitools \cite{epitools}, DCluster \cite{dcluster}, plotrix \cite{plotrix}, MASS \cite{MASS} \& mgcv \cite{mgcv}. Toda la información de este artículo (datos, análisis y resultados) se encuentra disponible en un repositorio de Github que se puede accesar mediante esta dirección: https://github.com/pablo-vivas/Proyecto-4.
 \section{Resultados}
 
 \begin{figure}[hbtp]
 \centering
+\begin{subfigure}
 \includegraphics[width=.48\textwidth]{F11.pdf}
 \includegraphics[width=.48\textwidth]{F12.pdf}
 \caption{Tasa de dengue (100.000 habitantes) por cantón, 2019.}
@@ -51,6 +57,19 @@ Los datos utilizados utilizados para realizar el análisis espacial del dengue e
 \includegraphics[width=.48\textwidth]{F22.pdf}
 \caption{Métodos de vecinos: Reina y Knn(4)}
 \end{figure}
+
+\begin{table}[h]
+\centering
+\begin{tabular}{cccc}
+\hline
+\multirow{2}{*}{Vecinos} & \multicolumn{3}{l}{Matriz de pesos}\\ \cline{2-4} 
+&W&B&S\\ \hline
+Reina&0,009&0,007&0,006\\
+Torre&0,011&0,008&0,008\\
+Knn(2)&0,018&0,018&0,018\\
+Knn(4)&0,026&0,026&0,026\\ \hline
+\end{tabular}
+\end{table}
 
 \begin{figure}[hbtp]
 \centering
@@ -77,18 +96,6 @@ Los datos utilizados utilizados para realizar el análisis espacial del dengue e
 \caption{Intervalos de confianza}
 \end{figure}
 
-\begin{table}[h]
-\centering
-\begin{tabular}{cccc}
-\hline
-\multirow{2}{*}{Vecinos} & \multicolumn{3}{l}{Matriz de pesos}\\ \cline{2-4} 
-&W&B&S\\ \hline
-Reina&0,009&0,007&0,006\\
-Torre&0,011&0,008&0,008\\
-Knn(2)&0,018&0,018&0,018\\
-Knn(4)&0,026&0,026&0,026\\ \hline
-\end{tabular}
-\end{table}
 
 \section{Conclusiones}
 

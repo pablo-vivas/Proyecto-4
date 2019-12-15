@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7200 64-bit) (preloaded format=pdflatex 2019.10.8)  15 DEC 2019 11:51
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7200 64-bit) (preloaded format=pdflatex 2019.10.8)  15 DEC 2019 14:45
 entering extended mode
 **./Escrito.tex
 (Escrito.tex
@@ -697,445 +697,171 @@ Package: multirow 2019/05/31 v2.5 Span multiple rows of a table
 \multirow@dima=\skip52
 \bigstrutjot=\dimen115
 )
-("C:\Users\Pablo Vivas\AppData\Local\Programs\MiKTeX 2.9\tex/latex/geometry\geo
-metry.sty"
-Package: geometry 2018/04/16 v5.8 Page Geometry
+("C:\Users\Pablo Vivas\AppData\Local\Programs\MiKTeX 2.9\tex/latex/mwe\mwe.sty"
+Package: mwe 2018/03/30 v0.5 Package to support minimal working examples (MWE)
 
-("C:\Users\Pablo Vivas\AppData\Local\Programs\MiKTeX 2.9\tex/generic/oberdiek\i
-fpdf.sty"
-Package: ifpdf 2018/09/07 v3.3 Provides the ifpdf switch
-)
-("C:\Users\Pablo Vivas\AppData\Local\Programs\MiKTeX 2.9\tex/generic/oberdiek\i
-fvtex.sty"
-Package: ifvtex 2016/05/16 v1.6 Detect VTeX and its facilities (HO)
-Package ifvtex Info: VTeX not detected.
-)
-("C:\Users\Pablo Vivas\AppData\Local\Programs\MiKTeX 2.9\tex/generic/ifxetex\if
-xetex.sty"
-Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
-)
-\Gm@cnth=\count109
-\Gm@cntv=\count110
-\c@Gm@tempcnt=\count111
-\Gm@bindingoffset=\dimen116
-\Gm@wd@mp=\dimen117
-\Gm@odd@mp=\dimen118
-\Gm@even@mp=\dimen119
-\Gm@layoutwidth=\dimen120
-\Gm@layoutheight=\dimen121
-\Gm@layouthoffset=\dimen122
-\Gm@layoutvoffset=\dimen123
-\Gm@dimlist=\toks23
+("C:\Users\Pablo Vivas\AppData\Local\Programs\MiKTeX 2.9\tex/latex/lipsum\lipsu
+m.sty"
+("C:\Users\Pablo Vivas\AppData\Local\Programs\MiKTeX 2.9\tex/latex/l3kernel\exp
+l3.sty"
+Package: expl3 2019-11-07 L3 programming layer (loader) 
 
-("C:\Users\Pablo Vivas\AppData\Local\Programs\MiKTeX 2.9\tex/latex/geometry\geo
-metry.cfg")) (Escrito.aux
-LaTeX Info: Redefining \. on input line 9.
-LaTeX Info: Redefining \% on input line 9.
-)
-\openout1 = `Escrito.aux'.
+("C:\Users\Pablo Vivas\AppData\Local\Programs\MiKTeX 2.9\tex/latex/l3kernel\exp
+l3-code.tex"
+Package: expl3 2019-11-07 L3 programming layer (code)
+\c_max_int=\count109
+\l_tmpa_int=\count110
+\l_tmpb_int=\count111
+\g_tmpa_int=\count112
+\g_tmpb_int=\count113
+\l__seq_internal_a_int=\count114
+\l__seq_internal_b_int=\count115
+\g__kernel_prg_map_int=\count116
+\c__ior_term_noprompt_ior=\count117
+\c_log_iow=\count118
+\l_iow_line_count_int=\count119
+\l__iow_line_target_int=\count120
+\l__iow_one_indent_int=\count121
+\l__iow_indent_int=\count122
+\c_zero_dim=\dimen116
+\c_max_dim=\dimen117
+\l_tmpa_dim=\dimen118
+\l_tmpb_dim=\dimen119
+\g_tmpa_dim=\dimen120
+\g_tmpb_dim=\dimen121
+\c_zero_skip=\skip53
+\c_max_skip=\skip54
+\l_tmpa_skip=\skip55
+\l_tmpb_skip=\skip56
+\g_tmpa_skip=\skip57
+\g_tmpb_skip=\skip58
+\c_zero_muskip=\muskip11
+\c_max_muskip=\muskip12
+\l_tmpa_muskip=\muskip13
+\l_tmpb_muskip=\muskip14
+\g_tmpa_muskip=\muskip15
+\g_tmpb_muskip=\muskip16
+\l_keys_choice_int=\count123
+\l__intarray_loop_int=\count124
+\c__intarray_sp_dim=\dimen122
+\g__intarray_font_int=\count125
+\c__fp_leading_shift_int=\count126
+\c__fp_middle_shift_int=\count127
+\c__fp_trailing_shift_int=\count128
+\c__fp_big_leading_shift_int=\count129
+\c__fp_big_middle_shift_int=\count130
+\c__fp_big_trailing_shift_int=\count131
+\c__fp_Bigg_leading_shift_int=\count132
+\c__fp_Bigg_middle_shift_int=\count133
+\c__fp_Bigg_trailing_shift_int=\count134
+\c__kernel_randint_max_int=\count135
+\g__fp_array_int=\count136
+\l__fp_array_loop_int=\count137
+\l__sort_length_int=\count138
+\l__sort_min_int=\count139
+\l__sort_top_int=\count140
+\l__sort_max_int=\count141
+\l__sort_true_max_int=\count142
+\l__sort_block_int=\count143
+\l__sort_begin_int=\count144
+\l__sort_end_int=\count145
+\l__sort_A_int=\count146
+\l__sort_B_int=\count147
+\l__sort_C_int=\count148
+\l__str_internal_int=\count149
+\c__str_replacement_char_int=\count150
+\l__tl_analysis_normal_int=\count151
+\l__tl_analysis_index_int=\count152
+\l__tl_analysis_nesting_int=\count153
+\l__tl_analysis_type_int=\count154
+\l__regex_internal_a_int=\count155
+\l__regex_internal_b_int=\count156
+\l__regex_internal_c_int=\count157
+\l__regex_balance_int=\count158
+\l__regex_group_level_int=\count159
+\l__regex_mode_int=\count160
+\c__regex_cs_in_class_mode_int=\count161
+\c__regex_cs_mode_int=\count162
+\l__regex_catcodes_int=\count163
+\l__regex_default_catcodes_int=\count164
+\c__regex_catcode_D_int=\count165
+\c__regex_catcode_S_int=\count166
+\c__regex_catcode_L_int=\count167
+\c__regex_catcode_O_int=\count168
+\c__regex_catcode_A_int=\count169
+\c__regex_all_catcodes_int=\count170
+\l__regex_show_lines_int=\count171
+\l__regex_min_state_int=\count172
+\l__regex_max_state_int=\count173
+\l__regex_left_state_int=\count174
+\l__regex_right_state_int=\count175
+\l__regex_capturing_group_int=\count176
+\l__regex_min_pos_int=\count177
+\l__regex_max_pos_int=\count178
+\l__regex_curr_pos_int=\count179
+\l__regex_start_pos_int=\count180
+\l__regex_success_pos_int=\count181
+\l__regex_curr_char_int=\count182
+\l__regex_curr_catcode_int=\count183
+\l__regex_last_char_int=\count184
+\l__regex_case_changed_char_int=\count185
+\l__regex_curr_state_int=\count186
+\l__regex_step_int=\count187
+\l__regex_min_active_int=\count188
+\l__regex_max_active_int=\count189
+\l__regex_replacement_csnames_int=\count190
+\l__regex_match_count_int=\count191
+\l__regex_min_submatch_int=\count192
+\l__regex_submatch_int=\count193
+\l__regex_zeroth_submatch_int=\count194
+\g__regex_trace_regex_int=\count195
+\c_empty_box=\box29
+\l_tmpa_box=\box30
+\l_tmpb_box=\box31
+\g_tmpa_box=\box32
+\g_tmpb_box=\box33
+\l__box_top_dim=\dimen123
+\l__box_bottom_dim=\dimen124
+\l__box_left_dim=\dimen125
+\l__box_right_dim=\dimen126
+\l__box_top_new_dim=\dimen127
+\l__box_bottom_new_dim=\dimen128
+\l__box_left_new_dim=\dimen129
+\l__box_right_new_dim=\dimen130
+\l__box_internal_box=\box34
+\l__coffin_internal_box=\box35
+\l__coffin_internal_dim=\dimen131
+\l__coffin_offset_x_dim=\dimen132
+\l__coffin_offset_y_dim=\dimen133
+\l__coffin_x_dim=\dimen134
+\l__coffin_y_dim=\dimen135
+\l__coffin_x_prime_dim=\dimen136
+\l__coffin_y_prime_dim=\dimen137
+\c_empty_coffin=\box36
+\l__coffin_aligned_coffin=\box37
+\l__coffin_aligned_internal_coffin=\box38
+\l_tmpa_coffin=\box39
+\l_tmpb_coffin=\box40
+\g_tmpa_coffin=\box41
+\g_tmpb_coffin=\box42
+\l__coffin_bounding_shift_dim=\dimen138
+\l__coffin_left_corner_dim=\dimen139
+\l__coffin_right_corner_dim=\dimen140
+\l__coffin_bottom_corner_dim=\dimen141
+\l__coffin_top_corner_dim=\dimen142
+\l__coffin_scaled_total_height_dim=\dimen143
+\l__coffin_scaled_width_dim=\dimen144
+\c__coffin_empty_coffin=\box43
+\l__coffin_display_coffin=\box44
+\l__coffin_display_coord_coffin=\box45
+\l__coffin_display_pole_coffin=\box46
+\l__coffin_display_offset_dim=\dimen145
+\l__coffin_display_x_dim=\dimen146
+\l__coffin_display_y_dim=\dimen147
+\g__char_data_ior=\read1
 
-LaTeX Font Info:    Checking defaults for OML/jkp/m/it on input line 20.
-LaTeX Font Info:    Trying to load font information for OML+jkp on input line 2
-0.
-
-("C:\Users\Pablo Vivas\AppData\Local\Programs\MiKTeX 2.9\tex/latex/kpfonts\omlj
-kp.fd"
-File: omljkp.fd 2006/08/15 v1.0
-)
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for OMS/jkp/m/n on input line 20.
-LaTeX Font Info:    Trying to load font information for OMS+jkp on input line 2
-0.
-
-("C:\Users\Pablo Vivas\AppData\Local\Programs\MiKTeX 2.9\tex/latex/kpfonts\omsj
-kp.fd"
-File: omsjkp.fd 2006/08/15 v1.0
-)
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for OMX/jkp/m/n on input line 20.
-LaTeX Font Info:    Trying to load font information for OMX+jkp on input line 2
-0.
-
-("C:\Users\Pablo Vivas\AppData\Local\Programs\MiKTeX 2.9\tex/latex/kpfonts\omxj
-kp.fd"
-File: omxjkp.fd 2006/08/15 v1.0
-)
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for U/jkpexa/m/n on input line 20.
-LaTeX Font Info:    Trying to load font information for U+jkpexa on input line 
-20.
-
-("C:\Users\Pablo Vivas\AppData\Local\Programs\MiKTeX 2.9\tex/latex/kpfonts\ujkp
-exa.fd"
-File: ujkpexa.fd 2006/08/15 v1.0
-)
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 20.
-LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 2
-0.
-
-("C:\Users\Pablo Vivas\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\ts1cmr.
-fd"
-File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
-)
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Trying to load font information for OT1+jkp on input line 2
-0.
-
-("C:\Users\Pablo Vivas\AppData\Local\Programs\MiKTeX 2.9\tex/latex/kpfonts\ot1j
-kp.fd"
-File: ot1jkp.fd 2007/08/30 Fontinst v1.928 font definitions for OT1/jkp.
-)
-LaTeX Info: Redefining \. on input line 20.
-LaTeX Info: Redefining \% on input line 20.
-
-("C:\Users\Pablo Vivas\AppData\Local\Programs\MiKTeX 2.9\tex/context/base/mkii\
-supp-pdf.mkii"
-[Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count112
-\scratchdimen=\dimen124
-\scratchbox=\box29
-\nofMPsegments=\count113
-\nofMParguments=\count114
-\everyMPshowfont=\toks24
-\MPscratchCnt=\count115
-\MPscratchDim=\dimen125
-\MPnumerator=\count116
-\makeMPintoPDFobject=\count117
-\everyMPtoPDFconversion=\toks25
-)
-("C:\Users\Pablo Vivas\AppData\Local\Programs\MiKTeX 2.9\tex/latex/oberdiek\eps
-topdf-base.sty"
-Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
-
-("C:\Users\Pablo Vivas\AppData\Local\Programs\MiKTeX 2.9\tex/generic/oberdiek\i
-nfwarerr.sty"
-Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
-)
-("C:\Users\Pablo Vivas\AppData\Local\Programs\MiKTeX 2.9\tex/latex/oberdiek\grf
-ext.sty"
-Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
-
-("C:\Users\Pablo Vivas\AppData\Local\Programs\MiKTeX 2.9\tex/generic/oberdiek\k
-vdefinekeys.sty"
-Package: kvdefinekeys 2016/05/16 v1.4 Define keys (HO)
-
-("C:\Users\Pablo Vivas\AppData\Local\Programs\MiKTeX 2.9\tex/generic/oberdiek\l
-txcmds.sty"
-Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
-)))
-("C:\Users\Pablo Vivas\AppData\Local\Programs\MiKTeX 2.9\tex/latex/oberdiek\kvo
-ptions.sty"
-Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
-
-("C:\Users\Pablo Vivas\AppData\Local\Programs\MiKTeX 2.9\tex/generic/oberdiek\k
-vsetkeys.sty"
-Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
-
-("C:\Users\Pablo Vivas\AppData\Local\Programs\MiKTeX 2.9\tex/generic/oberdiek\e
-texcmds.sty"
-Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
-
-("C:\Users\Pablo Vivas\AppData\Local\Programs\MiKTeX 2.9\tex/generic/oberdiek\i
-fluatex.sty"
-Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
-Package ifluatex Info: LuaTeX not detected.
-))))
-("C:\Users\Pablo Vivas\AppData\Local\Programs\MiKTeX 2.9\tex/generic/oberdiek\p
-dftexcmds.sty"
-Package: pdftexcmds 2019/07/25 v0.30 Utility functions of pdfTeX for LuaTeX (HO
-)
-Package pdftexcmds Info: LuaTeX not detected.
-Package pdftexcmds Info: \pdf@primitive is available.
-Package pdftexcmds Info: \pdf@ifprimitive is available.
-Package pdftexcmds Info: \pdfdraftmode found.
-)
-Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
-38.
-Package grfext Info: Graphics extension search list:
-(grfext)             [.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPE
-G,.JBIG2,.JB2,.eps]
-(grfext)             \AppendGraphicsExtensions on input line 456.
-)
-\c@maskedRefs=\count118
-
-("C:\Users\Pablo Vivas\AppData\Local\Programs\MiKTeX 2.9\tex/latex/apacite\span
-ish.apc"
-File: spanish.apc 2013/07/21 v6.03 apacite language file
-LaTeX Info: Redefining \BPBI on input line 138.
-LaTeX Info: Redefining \BHBI on input line 139.
-)
-*geometry* driver: auto-detecting
-*geometry* detected driver: pdftex
-*geometry* verbose mode - [ preamble ] result:
-* driver: pdftex
-* paper: a4paper
-* layout: <same size as paper>
-* layoutoffset:(h,v)=(0.0pt,0.0pt)
-* modes: 
-* h-part:(L,W,R)=(85.35826pt, 426.79135pt, 85.35826pt)
-* v-part:(T,H,B)=(56.9055pt, 731.23584pt, 56.9055pt)
-* \paperwidth=597.50787pt
-* \paperheight=845.04684pt
-* \textwidth=426.79135pt
-* \textheight=731.23584pt
-* \oddsidemargin=13.08827pt
-* \evensidemargin=13.08827pt
-* \topmargin=-52.36449pt
-* \headheight=12.0pt
-* \headsep=25.0pt
-* \topskip=12.0pt
-* \footskip=30.0pt
-* \marginparwidth=35.0pt
-* \marginparsep=10.0pt
-* \columnsep=10.0pt
-* \skip\footins=10.8pt plus 4.0pt minus 2.0pt
-* \hoffset=0.0pt
-* \voffset=0.0pt
-* \mag=1000
-* \@twocolumnfalse
-* \@twosidefalse
-* \@mparswitchfalse
-* \@reversemarginfalse
-* (1in=72.27pt=25.4mm, 1cm=28.453pt)
-
-LaTeX Font Info:    Trying to load font information for U+jkpsya on input line 
-21.
-
-("C:\Users\Pablo Vivas\AppData\Local\Programs\MiKTeX 2.9\tex/latex/kpfonts\ujkp
-sya.fd"
-File: ujkpsya.fd 2006/08/15 v1.0
-)
-LaTeX Font Info:    Trying to load font information for U+jkpsyb on input line 
-21.
-
-("C:\Users\Pablo Vivas\AppData\Local\Programs\MiKTeX 2.9\tex/latex/kpfonts\ujkp
-syb.fd"
-File: ujkpsyb.fd 2006/08/15 v1.0
-)
-LaTeX Font Info:    Trying to load font information for U+jkpmia on input line 
-21.
-
-("C:\Users\Pablo Vivas\AppData\Local\Programs\MiKTeX 2.9\tex/latex/kpfonts\ujkp
-mia.fd"
-File: ujkpmia.fd 2006/08/15 v1.0
-)
-LaTeX Font Info:    Trying to load font information for U+jkpsyc on input line 
-21.
-
-("C:\Users\Pablo Vivas\AppData\Local\Programs\MiKTeX 2.9\tex/latex/kpfonts\ujkp
-syc.fd"
-File: ujkpsyc.fd 2006/08/15 v1.0
-)
-Underfull \hbox (badness 10000) in paragraph at lines 29--30
-
- []
-
-[1
-
-{C:/Users/Pablo Vivas/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
-<F11.pdf, id=9, 505.89pt x 505.89pt>
-File: F11.pdf Graphic file (type pdf)
-<use F11.pdf>
-Package pdftex.def Info: F11.pdf  used on input line 43.
-(pdftex.def)             Requested size: 204.85802pt x 204.86116pt.
-<F12.pdf, id=10, 505.89pt x 505.89pt>
-File: F12.pdf Graphic file (type pdf)
-<use F12.pdf>
-Package pdftex.def Info: F12.pdf  used on input line 44.
-(pdftex.def)             Requested size: 204.85802pt x 204.86116pt.
-<F21.pdf, id=11, 505.89pt x 505.89pt>
-File: F21.pdf Graphic file (type pdf)
-<use F21.pdf>
-Package pdftex.def Info: F21.pdf  used on input line 50.
-(pdftex.def)             Requested size: 204.85802pt x 204.86116pt.
-<F22.pdf, id=12, 505.89pt x 505.89pt>
-File: F22.pdf Graphic file (type pdf)
-<use F22.pdf>
-Package pdftex.def Info: F22.pdf  used on input line 51.
-(pdftex.def)             Requested size: 204.85802pt x 204.86116pt.
-<F31.pdf, id=13, 505.89pt x 505.89pt>
-File: F31.pdf Graphic file (type pdf)
-<use F31.pdf>
-Package pdftex.def Info: F31.pdf  used on input line 57.
-(pdftex.def)             Requested size: 204.85802pt x 204.86116pt.
-<F32.pdf, id=14, 505.89pt x 505.89pt>
-File: F32.pdf Graphic file (type pdf)
-<use F32.pdf>
-Package pdftex.def Info: F32.pdf  used on input line 58.
-(pdftex.def)             Requested size: 204.85802pt x 204.86116pt.
-<F4.pdf, id=15, 505.89pt x 505.89pt>
-File: F4.pdf Graphic file (type pdf)
-<use F4.pdf>
-Package pdftex.def Info: F4.pdf  used on input line 64.
-(pdftex.def)             Requested size: 379.41655pt x 379.41655pt.
-<F5.pdf, id=16, 505.89pt x 505.89pt>
-File: F5.pdf Graphic file (type pdf)
-<use F5.pdf>
-Package pdftex.def Info: F5.pdf  used on input line 70.
-(pdftex.def)             Requested size: 252.94437pt x 252.94437pt.
-<F6.pdf, id=17, 505.89pt x 505.89pt>
-File: F6.pdf Graphic file (type pdf)
-<use F6.pdf>
-Package pdftex.def Info: F6.pdf  used on input line 76.
-(pdftex.def)             Requested size: 379.41655pt x 379.41655pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-<FA1.pdf, id=18, 505.89pt x 505.89pt>
-File: FA1.pdf Graphic file (type pdf)
-<use FA1.pdf>
-Package pdftex.def Info: FA1.pdf  used on input line 99.
-(pdftex.def)             Requested size: 204.85802pt x 204.86116pt.
-<FA2.pdf, id=19, 505.89pt x 505.89pt>
-File: FA2.pdf Graphic file (type pdf)
-<use FA2.pdf>
-Package pdftex.def Info: FA2.pdf  used on input line 100.
-(pdftex.def)             Requested size: 204.85802pt x 204.86116pt.
-<FA3.pdf, id=20, 505.89pt x 505.89pt>
-File: FA3.pdf Graphic file (type pdf)
-<use FA3.pdf>
-Package pdftex.def Info: FA3.pdf  used on input line 106.
-(pdftex.def)             Requested size: 204.85802pt x 204.86116pt.
-<FA4.pdf, id=21, 505.89pt x 505.89pt>
-File: FA4.pdf Graphic file (type pdf)
-<use FA4.pdf>
-Package pdftex.def Info: FA4.pdf  used on input line 107.
-(pdftex.def)             Requested size: 204.85802pt x 204.86116pt.
-<FA5.pdf, id=22, 505.89pt x 505.89pt>
-File: FA5.pdf Graphic file (type pdf)
-<use FA5.pdf>
-Package pdftex.def Info: FA5.pdf  used on input line 108.
-(pdftex.def)             Requested size: 204.85802pt x 204.86116pt.
-<FA6.pdf, id=23, 505.89pt x 505.89pt>
-File: FA6.pdf Graphic file (type pdf)
-<use FA6.pdf>
-Package pdftex.def Info: FA6.pdf  used on input line 109.
-(pdftex.def)             Requested size: 204.85802pt x 204.86116pt.
-<FA7.pdf, id=24, 505.89pt x 505.89pt>
-File: FA7.pdf Graphic file (type pdf)
-<use FA7.pdf>
-Package pdftex.def Info: FA7.pdf  used on input line 115.
-(pdftex.def)             Requested size: 379.41655pt x 379.41655pt.
-<FA8.pdf, id=25, 496.41663pt x 230.52423pt>
-File: FA8.pdf Graphic file (type pdf)
-<use FA8.pdf>
-Package pdftex.def Info: FA8.pdf  used on input line 121.
-(pdftex.def)             Requested size: 372.31155pt x 172.89273pt.
-<FA9.pdf, id=26, 505.89pt x 505.89pt>
-File: FA9.pdf Graphic file (type pdf)
-<use FA9.pdf>
-Package pdftex.def Info: FA9.pdf  used on input line 127.
-(pdftex.def)             Requested size: 379.41655pt x 379.41655pt.
-<FA10.pdf, id=27, 505.89pt x 505.89pt>
-File: FA10.pdf Graphic file (type pdf)
-<use FA10.pdf>
-Package pdftex.def Info: FA10.pdf  used on input line 133.
-(pdftex.def)             Requested size: 379.41655pt x 379.41655pt.
-(Escrito.bbl
-LaTeX Font Info:    Trying to load font information for OT1+jkptt on input line
- 23.
-
-("C:\Users\Pablo Vivas\AppData\Local\Programs\MiKTeX 2.9\tex/latex/kpfonts\ot1j
-kptt.fd"
-File: ot1jkptt.fd 2007/01/26 Fontinst v1.928 font definitions for OT1/jkptt.
-) [2] [3 <./F11.pdf> <./F12.pdf> <./F21.pdf> <./F22.pdf> <./F31.pdf> <./F32.pdf
->] [4 <./F4.pdf> <./F5.pdf>] [5 <./F6.pdf> <./FA1.pdf> <./FA2.pdf>]
-[6 <./FA3.pdf> <./FA4.pdf> <./FA5.pdf> <./FA6.pdf>] [7 <./FA7.pdf> <./FA8.pdf>]
-[8 <./FA9.pdf>] [9 <./FA10.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 171--185
-[]\OT1/jkp/m/n/12 Neuwirth, E.  (2014).  Rco-lor-bre-wer: Co-lor-bre-wer pa-let
--tes [Ma-
- []
-
-
-Underfull \hbox (badness 5302) in paragraph at lines 171--185
-\OT1/jkp/m/n/12 nual de soft-wa-re in-form[]ati-co].  Des-car-ga-do de \OT1/jkp
-tt/m/n/12 https://CRAN.R-
- []
-
-
-Underfull \hbox (badness 1629) in paragraph at lines 197--213
-[]\OT1/jkp/m/n/12 Pebesma, E.  (2018).  Sim-ple Fea-tu-res for R: Stan-dar-di-z
-ed Sup-port for
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 300--314
-[]\OT1/jkp/m/n/12 Tennekes, M.  (2019).  tmap-tools: The-ma-tic map tools [Ma-n
-ual
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 300--314
-\OT1/jkp/m/n/12 de soft-wa-re in-form[]ati-co].  Des-car-ga-do de \OT1/jkptt/m/
-n/12 https://CRAN.R-
- []
-
-
-Underfull \hbox (badness 5939) in paragraph at lines 328--344
-[]\OT1/jkp/m/n/12 Venables, W. N., y Ri-pley, B. D.  (2002).  \OT1/jkp/m/it/12 
-Mo-dern ap-plied sta-tis-
- []
-
-
-Underfull \hbox (badness 4120) in paragraph at lines 328--344
-\OT1/jkp/m/it/12 tics with s \OT1/jkp/m/n/12 (Fourth ed.[]).  New York: Sprin-g
-er.  Des-car-ga-do de
- []
-
-[10]
-Underfull \hbox (badness 1527) in paragraph at lines 391--406
-[]\OT1/jkp/m/n/12 Wickham, H.  (2017).  tidy-ver-se: Ea-sily ins-tall and load 
-the 'tidy-ver-se'
- []
-
-
-Underfull \hbox (badness 1325) in paragraph at lines 391--406
-\OT1/jkp/m/n/12 [Ma-nual de soft-wa-re in-form[]ati-co].  Des-car-ga-do de \OT1
-/jkptt/m/n/12 https://CRAN.R-
- []
-
-
-Underfull \hbox (badness 5533) in paragraph at lines 420--435
-[]\OT1/jkp/m/n/12 Wickham, H., y Bryan, J.  (2019).  readxl: Read ex-cel fi-les
- [Ma-
- []
-
-
-Underfull \hbox (badness 5302) in paragraph at lines 420--435
-\OT1/jkp/m/n/12 nual de soft-wa-re in-form[]ati-co].  Des-car-ga-do de \OT1/jkp
-tt/m/n/12 https://CRAN.R-
- []
-
-) [11] (Escrito.aux
-LaTeX Info: Redefining \. on input line 9.
-LaTeX Info: Redefining \% on input line 9.
-) ) 
-Here is how much of TeX's memory you used:
- 6510 strings out of 492452
- 88197 string characters out of 3117260
- 162180 words of memory out of 3000000
- 10706 multiletter control sequences out of 15000+200000
- 58635 words of font info for 142 fonts, out of 3000000 for 9000
- 1141 hyphenation exceptions out of 8191
- 46i,11n,35p,1419b,361s stack positions out of 5000i,500n,10000p,200000b,50000s
-{C:/Users/Pablo Vivas/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/base
-/8r.enc}<C:/Users/Pablo Vivas/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/pub
-lic/kpfonts/jkpbn8a.pfb><C:/Users/Pablo Vivas/AppData/Local/Programs/MiKTeX 2.9
-/fonts/type1/public/kpfonts/jkpmi.pfb><C:/Users/Pablo Vivas/AppData/Local/Progr
-ams/MiKTeX 2.9/fonts/type1/public/kpfonts/jkpmit8a.pfb><C:/Users/Pablo Vivas/Ap
-pData/Local/Programs/MiKTeX 2.9/fonts/type1/public/kpfonts/jkpmn8a.pfb><C:/User
-s/Pablo Vivas/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/kpfonts/jkpt
-tmn8a.pfb>
-Output written on Escrito.pdf (11 pages, 18978459 bytes).
-PDF statistics:
- 174 PDF objects out of 1000 (max. 8388607)
- 0 named destinations out of 1000 (max. 500000)
- 96 words of extra memory for PDF output out of 10000 (max. 10000000)
-
+("C:\Users\Pablo Vivas\AppData\Local\Programs\MiKTeX 2.9\tex/latex/l3kernel\l3d
+eprecation.def"
+File: l3deprecation.def 2019-04-06 v L3 Deprecated functions
+))
+("C:\Users\Pablo Vivas\AppData\Local\Programs\MiKTeX 2.9\tex/latex/l3
