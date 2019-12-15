@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7200 64-bit) (preloaded format=pdflatex 2019.10.8)  15 DEC 2019 10:33
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7200 64-bit) (preloaded format=pdflatex 2019.10.8)  15 DEC 2019 11:51
 entering extended mode
 **./Escrito.tex
 (Escrito.tex
@@ -729,8 +729,8 @@ Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 
 ("C:\Users\Pablo Vivas\AppData\Local\Programs\MiKTeX 2.9\tex/latex/geometry\geo
 metry.cfg")) (Escrito.aux
-LaTeX Info: Redefining \. on input line 24.
-LaTeX Info: Redefining \% on input line 24.
+LaTeX Info: Redefining \. on input line 9.
+LaTeX Info: Redefining \% on input line 9.
 )
 \openout1 = `Escrito.aux'.
 
@@ -930,107 +930,112 @@ LaTeX Font Info:    Trying to load font information for U+jkpsyc on input line
 ("C:\Users\Pablo Vivas\AppData\Local\Programs\MiKTeX 2.9\tex/latex/kpfonts\ujkp
 syc.fd"
 File: ujkpsyc.fd 2006/08/15 v1.0
-) [1
+)
+Underfull \hbox (badness 10000) in paragraph at lines 29--30
+
+ []
+
+[1
 
 {C:/Users/Pablo Vivas/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
-<F11.pdf, id=8, 505.89pt x 505.89pt>
+<F11.pdf, id=9, 505.89pt x 505.89pt>
 File: F11.pdf Graphic file (type pdf)
 <use F11.pdf>
-Package pdftex.def Info: F11.pdf  used on input line 37.
+Package pdftex.def Info: F11.pdf  used on input line 43.
 (pdftex.def)             Requested size: 204.85802pt x 204.86116pt.
-<F12.pdf, id=9, 505.89pt x 505.89pt>
+<F12.pdf, id=10, 505.89pt x 505.89pt>
 File: F12.pdf Graphic file (type pdf)
 <use F12.pdf>
-Package pdftex.def Info: F12.pdf  used on input line 38.
+Package pdftex.def Info: F12.pdf  used on input line 44.
 (pdftex.def)             Requested size: 204.85802pt x 204.86116pt.
-<F21.pdf, id=10, 505.89pt x 505.89pt>
+<F21.pdf, id=11, 505.89pt x 505.89pt>
 File: F21.pdf Graphic file (type pdf)
 <use F21.pdf>
-Package pdftex.def Info: F21.pdf  used on input line 44.
+Package pdftex.def Info: F21.pdf  used on input line 50.
 (pdftex.def)             Requested size: 204.85802pt x 204.86116pt.
-<F22.pdf, id=11, 505.89pt x 505.89pt>
+<F22.pdf, id=12, 505.89pt x 505.89pt>
 File: F22.pdf Graphic file (type pdf)
 <use F22.pdf>
-Package pdftex.def Info: F22.pdf  used on input line 45.
+Package pdftex.def Info: F22.pdf  used on input line 51.
 (pdftex.def)             Requested size: 204.85802pt x 204.86116pt.
-<F31.pdf, id=12, 505.89pt x 505.89pt>
+<F31.pdf, id=13, 505.89pt x 505.89pt>
 File: F31.pdf Graphic file (type pdf)
 <use F31.pdf>
-Package pdftex.def Info: F31.pdf  used on input line 51.
+Package pdftex.def Info: F31.pdf  used on input line 57.
 (pdftex.def)             Requested size: 204.85802pt x 204.86116pt.
-<F32.pdf, id=13, 505.89pt x 505.89pt>
+<F32.pdf, id=14, 505.89pt x 505.89pt>
 File: F32.pdf Graphic file (type pdf)
 <use F32.pdf>
-Package pdftex.def Info: F32.pdf  used on input line 52.
+Package pdftex.def Info: F32.pdf  used on input line 58.
 (pdftex.def)             Requested size: 204.85802pt x 204.86116pt.
-<F4.pdf, id=14, 505.89pt x 505.89pt>
+<F4.pdf, id=15, 505.89pt x 505.89pt>
 File: F4.pdf Graphic file (type pdf)
 <use F4.pdf>
-Package pdftex.def Info: F4.pdf  used on input line 58.
+Package pdftex.def Info: F4.pdf  used on input line 64.
 (pdftex.def)             Requested size: 379.41655pt x 379.41655pt.
-<F5.pdf, id=15, 505.89pt x 505.89pt>
+<F5.pdf, id=16, 505.89pt x 505.89pt>
 File: F5.pdf Graphic file (type pdf)
 <use F5.pdf>
-Package pdftex.def Info: F5.pdf  used on input line 64.
+Package pdftex.def Info: F5.pdf  used on input line 70.
 (pdftex.def)             Requested size: 252.94437pt x 252.94437pt.
-<F6.pdf, id=16, 505.89pt x 505.89pt>
+<F6.pdf, id=17, 505.89pt x 505.89pt>
 File: F6.pdf Graphic file (type pdf)
 <use F6.pdf>
-Package pdftex.def Info: F6.pdf  used on input line 70.
+Package pdftex.def Info: F6.pdf  used on input line 76.
 (pdftex.def)             Requested size: 379.41655pt x 379.41655pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<FA1.pdf, id=17, 505.89pt x 505.89pt>
+<FA1.pdf, id=18, 505.89pt x 505.89pt>
 File: FA1.pdf Graphic file (type pdf)
 <use FA1.pdf>
-Package pdftex.def Info: FA1.pdf  used on input line 93.
+Package pdftex.def Info: FA1.pdf  used on input line 99.
 (pdftex.def)             Requested size: 204.85802pt x 204.86116pt.
-<FA2.pdf, id=18, 505.89pt x 505.89pt>
+<FA2.pdf, id=19, 505.89pt x 505.89pt>
 File: FA2.pdf Graphic file (type pdf)
 <use FA2.pdf>
-Package pdftex.def Info: FA2.pdf  used on input line 94.
+Package pdftex.def Info: FA2.pdf  used on input line 100.
 (pdftex.def)             Requested size: 204.85802pt x 204.86116pt.
-<FA3.pdf, id=19, 505.89pt x 505.89pt>
+<FA3.pdf, id=20, 505.89pt x 505.89pt>
 File: FA3.pdf Graphic file (type pdf)
 <use FA3.pdf>
-Package pdftex.def Info: FA3.pdf  used on input line 100.
+Package pdftex.def Info: FA3.pdf  used on input line 106.
 (pdftex.def)             Requested size: 204.85802pt x 204.86116pt.
-<FA4.pdf, id=20, 505.89pt x 505.89pt>
+<FA4.pdf, id=21, 505.89pt x 505.89pt>
 File: FA4.pdf Graphic file (type pdf)
 <use FA4.pdf>
-Package pdftex.def Info: FA4.pdf  used on input line 101.
+Package pdftex.def Info: FA4.pdf  used on input line 107.
 (pdftex.def)             Requested size: 204.85802pt x 204.86116pt.
-<FA5.pdf, id=21, 505.89pt x 505.89pt>
+<FA5.pdf, id=22, 505.89pt x 505.89pt>
 File: FA5.pdf Graphic file (type pdf)
 <use FA5.pdf>
-Package pdftex.def Info: FA5.pdf  used on input line 102.
+Package pdftex.def Info: FA5.pdf  used on input line 108.
 (pdftex.def)             Requested size: 204.85802pt x 204.86116pt.
-<FA6.pdf, id=22, 505.89pt x 505.89pt>
+<FA6.pdf, id=23, 505.89pt x 505.89pt>
 File: FA6.pdf Graphic file (type pdf)
 <use FA6.pdf>
-Package pdftex.def Info: FA6.pdf  used on input line 103.
+Package pdftex.def Info: FA6.pdf  used on input line 109.
 (pdftex.def)             Requested size: 204.85802pt x 204.86116pt.
-<FA7.pdf, id=23, 505.89pt x 505.89pt>
+<FA7.pdf, id=24, 505.89pt x 505.89pt>
 File: FA7.pdf Graphic file (type pdf)
 <use FA7.pdf>
-Package pdftex.def Info: FA7.pdf  used on input line 109.
+Package pdftex.def Info: FA7.pdf  used on input line 115.
 (pdftex.def)             Requested size: 379.41655pt x 379.41655pt.
-<FA8.pdf, id=24, 496.41663pt x 230.52423pt>
+<FA8.pdf, id=25, 496.41663pt x 230.52423pt>
 File: FA8.pdf Graphic file (type pdf)
 <use FA8.pdf>
-Package pdftex.def Info: FA8.pdf  used on input line 115.
+Package pdftex.def Info: FA8.pdf  used on input line 121.
 (pdftex.def)             Requested size: 372.31155pt x 172.89273pt.
-<FA9.pdf, id=25, 505.89pt x 505.89pt>
+<FA9.pdf, id=26, 505.89pt x 505.89pt>
 File: FA9.pdf Graphic file (type pdf)
 <use FA9.pdf>
-Package pdftex.def Info: FA9.pdf  used on input line 121.
+Package pdftex.def Info: FA9.pdf  used on input line 127.
 (pdftex.def)             Requested size: 379.41655pt x 379.41655pt.
-<FA10.pdf, id=26, 505.89pt x 505.89pt>
+<FA10.pdf, id=27, 505.89pt x 505.89pt>
 File: FA10.pdf Graphic file (type pdf)
 <use FA10.pdf>
-Package pdftex.def Info: FA10.pdf  used on input line 127.
+Package pdftex.def Info: FA10.pdf  used on input line 133.
 (pdftex.def)             Requested size: 379.41655pt x 379.41655pt.
 (Escrito.bbl
 LaTeX Font Info:    Trying to load font information for OT1+jkptt on input line
@@ -1039,10 +1044,10 @@ LaTeX Font Info:    Trying to load font information for OT1+jkptt on input line
 ("C:\Users\Pablo Vivas\AppData\Local\Programs\MiKTeX 2.9\tex/latex/kpfonts\ot1j
 kptt.fd"
 File: ot1jkptt.fd 2007/01/26 Fontinst v1.928 font definitions for OT1/jkptt.
-) [2 <./F11.pdf> <./F12.pdf> <./F21.pdf> <./F22.pdf>] [3 <./F31.pdf> <./F32.pdf
-> <./F4.pdf>] [4 <./F5.pdf> <./F6.pdf>] [5 <./FA1.pdf> <./FA2.pdf> <./FA3.pdf> 
-<./FA4.pdf> <./FA5.pdf> <./FA6.pdf>] [6 <./FA7.pdf> <./FA8.pdf>]
-[7 <./FA9.pdf>] [8 <./FA10.pdf>]
+) [2] [3 <./F11.pdf> <./F12.pdf> <./F21.pdf> <./F22.pdf> <./F31.pdf> <./F32.pdf
+>] [4 <./F4.pdf> <./F5.pdf>] [5 <./F6.pdf> <./FA1.pdf> <./FA2.pdf>]
+[6 <./FA3.pdf> <./FA4.pdf> <./FA5.pdf> <./FA6.pdf>] [7 <./FA7.pdf> <./FA8.pdf>]
+[8 <./FA9.pdf>] [9 <./FA10.pdf>]
 Underfull \hbox (badness 10000) in paragraph at lines 171--185
 []\OT1/jkp/m/n/12 Neuwirth, E.  (2014).  Rco-lor-bre-wer: Co-lor-bre-wer pa-let
 -tes [Ma-
@@ -1061,74 +1066,76 @@ ed Sup-port for
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 276--290
+Underfull \hbox (badness 10000) in paragraph at lines 300--314
 []\OT1/jkp/m/n/12 Tennekes, M.  (2019).  tmap-tools: The-ma-tic map tools [Ma-n
 ual
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 276--290
+Underfull \hbox (badness 10000) in paragraph at lines 300--314
 \OT1/jkp/m/n/12 de soft-wa-re in-form[]ati-co].  Des-car-ga-do de \OT1/jkptt/m/
 n/12 https://CRAN.R-
  []
 
 
-Underfull \hbox (badness 5939) in paragraph at lines 304--320
+Underfull \hbox (badness 5939) in paragraph at lines 328--344
 []\OT1/jkp/m/n/12 Venables, W. N., y Ri-pley, B. D.  (2002).  \OT1/jkp/m/it/12 
 Mo-dern ap-plied sta-tis-
  []
 
 
-Underfull \hbox (badness 4120) in paragraph at lines 304--320
+Underfull \hbox (badness 4120) in paragraph at lines 328--344
 \OT1/jkp/m/it/12 tics with s \OT1/jkp/m/n/12 (Fourth ed.[]).  New York: Sprin-g
 er.  Des-car-ga-do de
  []
 
-
-Underfull \hbox (badness 1527) in paragraph at lines 332--347
+[10]
+Underfull \hbox (badness 1527) in paragraph at lines 391--406
 []\OT1/jkp/m/n/12 Wickham, H.  (2017).  tidy-ver-se: Ea-sily ins-tall and load 
 the 'tidy-ver-se'
  []
 
 
-Underfull \hbox (badness 1325) in paragraph at lines 332--347
+Underfull \hbox (badness 1325) in paragraph at lines 391--406
 \OT1/jkp/m/n/12 [Ma-nual de soft-wa-re in-form[]ati-co].  Des-car-ga-do de \OT1
 /jkptt/m/n/12 https://CRAN.R-
  []
 
 
-Underfull \hbox (badness 5533) in paragraph at lines 361--376
+Underfull \hbox (badness 5533) in paragraph at lines 420--435
 []\OT1/jkp/m/n/12 Wickham, H., y Bryan, J.  (2019).  readxl: Read ex-cel fi-les
  [Ma-
  []
 
 
-Underfull \hbox (badness 5302) in paragraph at lines 361--376
+Underfull \hbox (badness 5302) in paragraph at lines 420--435
 \OT1/jkp/m/n/12 nual de soft-wa-re in-form[]ati-co].  Des-car-ga-do de \OT1/jkp
 tt/m/n/12 https://CRAN.R-
  []
 
-[9]) [10] (Escrito.aux
-LaTeX Info: Redefining \. on input line 24.
-LaTeX Info: Redefining \% on input line 24.
+) [11] (Escrito.aux
+LaTeX Info: Redefining \. on input line 9.
+LaTeX Info: Redefining \% on input line 9.
 ) ) 
 Here is how much of TeX's memory you used:
- 6483 strings out of 492452
- 87805 string characters out of 3117260
- 158034 words of memory out of 3000000
- 10681 multiletter control sequences out of 15000+200000
- 51701 words of font info for 123 fonts, out of 3000000 for 9000
+ 6510 strings out of 492452
+ 88197 string characters out of 3117260
+ 162180 words of memory out of 3000000
+ 10706 multiletter control sequences out of 15000+200000
+ 58635 words of font info for 142 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 46i,11n,35p,1416b,361s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 46i,11n,35p,1419b,361s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Users/Pablo Vivas/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/base
 /8r.enc}<C:/Users/Pablo Vivas/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/pub
 lic/kpfonts/jkpbn8a.pfb><C:/Users/Pablo Vivas/AppData/Local/Programs/MiKTeX 2.9
-/fonts/type1/public/kpfonts/jkpmit8a.pfb><C:/Users/Pablo Vivas/AppData/Local/Pr
-ograms/MiKTeX 2.9/fonts/type1/public/kpfonts/jkpmn8a.pfb><C:/Users/Pablo Vivas/
-AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/kpfonts/jkpttmn8a.pfb>
-Output written on Escrito.pdf (10 pages, 18971865 bytes).
+/fonts/type1/public/kpfonts/jkpmi.pfb><C:/Users/Pablo Vivas/AppData/Local/Progr
+ams/MiKTeX 2.9/fonts/type1/public/kpfonts/jkpmit8a.pfb><C:/Users/Pablo Vivas/Ap
+pData/Local/Programs/MiKTeX 2.9/fonts/type1/public/kpfonts/jkpmn8a.pfb><C:/User
+s/Pablo Vivas/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/kpfonts/jkpt
+tmn8a.pfb>
+Output written on Escrito.pdf (11 pages, 18978459 bytes).
 PDF statistics:
- 167 PDF objects out of 1000 (max. 8388607)
+ 174 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  96 words of extra memory for PDF output out of 10000 (max. 10000000)
 

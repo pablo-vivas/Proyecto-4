@@ -15,7 +15,6 @@ Este repositorio contiene toda la información referida al último proyecto del 
 * Carpetas
   * [Bibliografía](#bibliografía)
   * [Datos](#datos)
-  * [Figuras](#figuras)
   * [Trabajo escrito](#trabajo-escrito)
 
 
@@ -54,16 +53,16 @@ Aquí se almacenan los datos utilizados en el análisis. Destacan principalmente
   * `residuos`: Porcentaje de viviendas que eliminan los residuos sólidos por camión recolector en el 2011. INEC. [LINK](http://sistemas.inec.cr:8080/bincri/RpWebEngine.exe/Portal?BASE=2011&lang=esp)
   * `acueducto`: Porcentaje de viviendas con acueducto en el 2011. INEC. [LINK](http://sistemas.inec.cr:8080/bincri/RpWebEngine.exe/Portal?BASE=2011&lang=esp)
 
-### Figuras
+### Trabajo Escrito
 
-Contiene las figuras creadas en la investigación. Se describe cada una de ellas: 
+En esta carpeta se almacenan todos los archivos necesarios para la creación del documento `Escrito.pdf`. Estos archivos se crearon mediante el software [TexMaker](https://www.xm1math.net/texmaker/)
 
-* `F1.1.pdf`: 
-* `F1.2.pdf`: 
-* `F2.1.pdf`: 
-* `F2.2.pdf`: 
-* `F3.1.pdf`: 
-* `F3.2.pdf`: 
+* `F11.pdf`: 
+* `F12.pdf`: 
+* `F21.pdf`: 
+* `F22.pdf`: 
+* `F31.pdf`: 
+* `F32.pdf`: 
 * `F4.pdf`: 
 * `F5.pdf`: 
 * `F6.pdf`: 
@@ -76,11 +75,4 @@ Contiene las figuras creadas en la investigación. Se describe cada una de ellas
 * `FA7.pdf`: 
 * `FA8.pdf`: 
 * `FA9.pdf`: 
-* `FA10.pdf`: 
-
-### Trabajo Escrito
-
-En esta carpeta se almacenan todos los archivos necesarios para la creación del documento `Escrito.pdf`. Estos archivos se crearon mediante el software [TexMaker](https://www.xm1math.net/texmaker/)
-
----
-
+* `FA10.pdf`:

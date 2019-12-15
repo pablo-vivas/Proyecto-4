@@ -238,6 +238,30 @@ R}%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
+Scott%
+}{%
+Scott%
+}{%
+{\protect \APACyear {2009}}%
+}]{%
+OMS}
+\APACinsertmetastar {%
+OMS}%
+\begin{APACrefauthors}%
+Scott, T\BPBI W.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2009}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{Dengue}} {{Dengue}}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Encyclopedia of Insects}{}{}{257--259}.
+\newblock
+\begin{APACrefDOI} \doi{10.1016/B978-0-12-374144-8.00078-3} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
 Tennekes%
 }{%
 Tennekes%
@@ -316,6 +340,41 @@ Venables, W\BPBI N.%
 \begin{APACrefURL} \url{http://www.stats.ox.ac.uk/pub/MASS4} \end{APACrefURL}
 \newblock
 \APACrefnote{ISBN 0-387-95457-0}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Waggoner%
+\ \protect \BOthers {.}}{%
+Waggoner%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2016}}%
+}]{%
+Waggoner2016}
+\APACinsertmetastar {%
+Waggoner2016}%
+\begin{APACrefauthors}%
+Waggoner, J\BPBI J.%
+, Gresh, L.%
+, Vargas, M\BPBI J.%
+, Ballesteros, G.%
+, Tellez, Y.%
+, Soda, K\BPBI J.%
+\BDBL {}Pinsky, B\BPBI A.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2016}{{\APACmonth{08}}}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Viremia and Clinical Presentation in Nicaraguan Patients
+  Infected With Zika Virus, Chikungunya Virus, and Dengue Virus} {Viremia and
+  clinical presentation in nicaraguan patients infected with zika virus,
+  chikungunya virus, and dengue virus}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Clinical Infectious Diseases}{63}{12}{1584--1590}.
+\newblock
+\begin{APACrefURL} \url{https://doi.org/10.1093/cid/ciw589} \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{10.1093/cid/ciw589} \end{APACrefDOI}
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
