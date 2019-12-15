@@ -10,6 +10,7 @@
 \usepackage{kpfonts}
 \usepackage{apacite}
 \usepackage{multirow}
+\usepackage{multirow}
 \setlength{\parindent}{0em}
 \usepackage[left=3cm,right=3cm,top=2cm,bottom=2cm]{geometry}
 \author{Pablo Vivas Corrales\footnote{\textit{Maestría Académica en Estadística. Universidad de Costa Rica}}\\\textit{pablo.vivas@ucr.ac.cr}}
@@ -28,13 +29,30 @@ El dengue es una enfermedad aguda febril, producida por un virus ARN de la famil
 \section{Métodos}
 
 Los datos utilizados utilizados para realizar el análisis espacial del dengue en Costa Rica provienen de dos fuentes. En primer lugar, de la sección de vigilancia del Ministerio de Salud se obtiene la información de los casos de dengue para el 2019 por cantón,  
+
+Los paquetes de R de \textit{readxl, sp, sf, tidyverse, rgdal, RColorBrewer, spdep, tmap, tmaptools ,spatialreg,epitools, DCluster, plotrix, MASS \& mgcv}
 \section{Resultados}
 
+\begin{table}[h]
+\centering
+\begin{tabular}{cccc}
+\hline
+\multirow{2}{*}{Vecinos} & \multicolumn{3}{l}{Matriz de pesos}\\ \cline{2-4} 
+&W&B&S\\ \hline
+Reina&0,009&0,007&0,006\\
+Torre&0,011&0,008&0,008\\
+Knn(2)&0,018&0,018&0,018\\
+Knn(4)&0,026&0,026&0,026\\ \hline
+\end{tabular}
+\end{table}
 
 \section{Conclusiones}
 
+\section{Anexos}
+Aquí se ponene los anexos
 
 %%Bibliografía
 \bibliographystyle{apacite}
 \bibliography{Referencias}
 \end{document}
+

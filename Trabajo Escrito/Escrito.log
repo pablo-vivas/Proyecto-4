@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7200 64-bit) (preloaded format=pdflatex 2019.10.8)  14 DEC 2019 23:42
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7200 64-bit) (preloaded format=pdflatex 2019.10.8)  15 DEC 2019 00:24
 entering extended mode
 **./Escrito.tex
 (Escrito.tex
@@ -728,67 +728,70 @@ Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 \Gm@dimlist=\toks23
 
 ("C:\Users\Pablo Vivas\AppData\Local\Programs\MiKTeX 2.9\tex/latex/geometry\geo
-metry.cfg")) (Escrito.aux)
+metry.cfg")) (Escrito.aux
+LaTeX Info: Redefining \. on input line 8.
+LaTeX Info: Redefining \% on input line 8.
+)
 \openout1 = `Escrito.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/jkp/m/it on input line 18.
+LaTeX Font Info:    Checking defaults for OML/jkp/m/it on input line 19.
 LaTeX Font Info:    Trying to load font information for OML+jkp on input line 1
-8.
+9.
 
 ("C:\Users\Pablo Vivas\AppData\Local\Programs\MiKTeX 2.9\tex/latex/kpfonts\omlj
 kp.fd"
 File: omljkp.fd 2006/08/15 v1.0
 )
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for OMS/jkp/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for OMS/jkp/m/n on input line 19.
 LaTeX Font Info:    Trying to load font information for OMS+jkp on input line 1
-8.
+9.
 
 ("C:\Users\Pablo Vivas\AppData\Local\Programs\MiKTeX 2.9\tex/latex/kpfonts\omsj
 kp.fd"
 File: omsjkp.fd 2006/08/15 v1.0
 )
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for OMX/jkp/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for OMX/jkp/m/n on input line 19.
 LaTeX Font Info:    Trying to load font information for OMX+jkp on input line 1
-8.
+9.
 
 ("C:\Users\Pablo Vivas\AppData\Local\Programs\MiKTeX 2.9\tex/latex/kpfonts\omxj
 kp.fd"
 File: omxjkp.fd 2006/08/15 v1.0
 )
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for U/jkpexa/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for U/jkpexa/m/n on input line 19.
 LaTeX Font Info:    Trying to load font information for U+jkpexa on input line 
-18.
+19.
 
 ("C:\Users\Pablo Vivas\AppData\Local\Programs\MiKTeX 2.9\tex/latex/kpfonts\ujkp
 exa.fd"
 File: ujkpexa.fd 2006/08/15 v1.0
 )
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 19.
 LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 1
-8.
+9.
 
 ("C:\Users\Pablo Vivas\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\ts1cmr.
 fd"
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    ... okay on input line 19.
 LaTeX Font Info:    Trying to load font information for OT1+jkp on input line 1
-8.
+9.
 
 ("C:\Users\Pablo Vivas\AppData\Local\Programs\MiKTeX 2.9\tex/latex/kpfonts\ot1j
 kp.fd"
 File: ot1jkp.fd 2007/08/30 Fontinst v1.928 font definitions for OT1/jkp.
 )
-LaTeX Info: Redefining \. on input line 18.
-LaTeX Info: Redefining \% on input line 18.
+LaTeX Info: Redefining \. on input line 19.
+LaTeX Info: Redefining \% on input line 19.
 
 ("C:\Users\Pablo Vivas\AppData\Local\Programs\MiKTeX 2.9\tex/context/base/mkii\
 supp-pdf.mkii"
@@ -901,45 +904,45 @@ LaTeX Info: Redefining \BHBI on input line 139.
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 LaTeX Font Info:    Trying to load font information for U+jkpsya on input line 
-19.
+20.
 
 ("C:\Users\Pablo Vivas\AppData\Local\Programs\MiKTeX 2.9\tex/latex/kpfonts\ujkp
 sya.fd"
 File: ujkpsya.fd 2006/08/15 v1.0
 )
 LaTeX Font Info:    Trying to load font information for U+jkpsyb on input line 
-19.
+20.
 
 ("C:\Users\Pablo Vivas\AppData\Local\Programs\MiKTeX 2.9\tex/latex/kpfonts\ujkp
 syb.fd"
 File: ujkpsyb.fd 2006/08/15 v1.0
 )
 LaTeX Font Info:    Trying to load font information for U+jkpmia on input line 
-19.
+20.
 
 ("C:\Users\Pablo Vivas\AppData\Local\Programs\MiKTeX 2.9\tex/latex/kpfonts\ujkp
 mia.fd"
 File: ujkpmia.fd 2006/08/15 v1.0
 )
 LaTeX Font Info:    Trying to load font information for U+jkpsyc on input line 
-19.
+20.
 
 ("C:\Users\Pablo Vivas\AppData\Local\Programs\MiKTeX 2.9\tex/latex/kpfonts\ujkp
 syc.fd"
 File: ujkpsyc.fd 2006/08/15 v1.0
-) (Escrito.bbl [1
+) [1
 
-{C:/Users/Pablo Vivas/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]) [2] 
-(Escrito.aux
-LaTeX Info: Redefining \. on input line 12.
-LaTeX Info: Redefining \% on input line 12.
+{C:/Users/Pablo Vivas/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}] (Escr
+ito.bbl) [2] (Escrito.aux
+LaTeX Info: Redefining \. on input line 8.
+LaTeX Info: Redefining \% on input line 8.
 ) ) 
 Here is how much of TeX's memory you used:
- 6244 strings out of 492452
- 84635 string characters out of 3117260
+ 6270 strings out of 492452
+ 85002 string characters out of 3117260
  154842 words of memory out of 3000000
- 10467 multiletter control sequences out of 15000+200000
- 41155 words of font info for 94 fonts, out of 3000000 for 9000
+ 10493 multiletter control sequences out of 15000+200000
+ 50903 words of font info for 120 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  46i,11n,35p,1416b,361s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Users/Pablo Vivas/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/base
@@ -947,7 +950,7 @@ Here is how much of TeX's memory you used:
 lic/kpfonts/jkpbn8a.pfb><C:/Users/Pablo Vivas/AppData/Local/Programs/MiKTeX 2.9
 /fonts/type1/public/kpfonts/jkpmit8a.pfb><C:/Users/Pablo Vivas/AppData/Local/Pr
 ograms/MiKTeX 2.9/fonts/type1/public/kpfonts/jkpmn8a.pfb>
-Output written on Escrito.pdf (2 pages, 42126 bytes).
+Output written on Escrito.pdf (2 pages, 45402 bytes).
 PDF statistics:
  22 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
