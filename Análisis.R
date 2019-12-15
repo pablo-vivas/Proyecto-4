@@ -35,30 +35,62 @@ rm(new_bb)
 
 #Primer ploteo
 #Estadísticas descriptivas
-tm_shape(datos_sf) +
-  tm_polygons("casos", palette=c("lightgreen","tomato"), legend.hist=TRUE)
+pdf("Figuras/F1.1.pdf")
 
 tm_shape(datos_sf) +
   tm_polygons("dengue", palette=c("lightgreen","tomato"), legend.hist=TRUE)
 
+dev.off()
+
+pdf("Figuras/F1.2.pdf")
+
 tm_shape(datos_sf) +
   tm_polygons("dengue", palette=c("lightgreen","tomato"),style="quantile")
+
+dev.off()
+
+pdf("Figuras/FA1.pdf")
+
+tm_shape(datos_sf) +
+  tm_polygons("casos", palette=c("lightgreen","tomato"), legend.hist=TRUE)
+
+dev.off()
+
+pdf("Figuras/FA2.pdf")
 
 tm_shape(datos_sf) +
   tm_fill("dengue",style="sd",palette=c("lightgreen","tomato")) +
   tm_borders()
 
+dev.off()
+
+pdf("Figuras/FA3.pdf")
+
 tm_shape(datos_sf) +
   tm_polygons("tugurio",n=6, palette="-Spectral")
+
+dev.off()
+
+pdf("Figuras/FA4.pdf")
 
 tm_shape(datos_sf) +
   tm_polygons("densidad",n=6, palette="-Spectral")
 
+dev.off()
+
+pdf("Figuras/FA5.pdf")
+
 tm_shape(datos_sf) +
   tm_polygons("residuos",n=6, palette="Spectral")
 
+dev.off()
+
+pdf("Figuras/FA6.pdf")
+
 tm_shape(datos_sf) +
   tm_polygons("acueducto",n=6, palette="Spectral")
+
+dev.off()
 
 datos_sp <- as(datos_sf,"Spatial")
 datos_sp@bbox <- matrix(c(286803.0, 889158.2, 658864.2,1241118.1),ncol = 2,byrow = F)
@@ -74,12 +106,19 @@ nb.2 <- poly2nb(datos_sp,queen = F)
 nb.3 <- knn2nb(knearneigh(coords, k=2), row.names=id)
 nb.4 <- knn2nb(knearneigh(coords, k=4), row.names=id)
 
+pdf("Figuras/F2.1.pdf")
 
 plot(datos_sp, axes=F, border="gray")
 plot(nb.1,coords, pch = 20, cex = 0.6, add = T, col = "red")
 
+dev.off()
+
+pdf("Figuras/F2.2.pdf")
+
 plot(datos_sp, axes=F, border="gray")
 plot(nb.4,coords, pch = 20, cex = 0.6, add = T, col = "red")
+
+dev.off()
 
 #Matrices de pesos
 w.11 <- nb2listw(nb.1,style = "W")
@@ -117,8 +156,11 @@ rm(nb.2,nb.3,nb.4,w.12,w.13,w.21,w.22,w.23,w.31,w.32,w.33,w.41,w.42,w.43,coords,
 
 #Casos de influencia
 
+pdf("Figuras/F3.1.pdf")
+
 msp <- moran.plot(datos_sp$dengue, listw=w.11, quiet=TRUE,xlab="Casos de Dengue",ylab = "Casos espacialmente rezagados")
-title("Gráfico de dispersión de Moran")
+
+dev.off()
 
 infl <- apply(msp$is.inf, 1, any)
 x <- datos_sp$dengue
@@ -130,9 +172,13 @@ cols <- rep(1, length(lhlh))
 cols[lhlh == "H.L.TRUE"] <- 2
 cols[lhlh == "L.H.TRUE"] <- 3
 cols[lhlh == "H.H.TRUE"] <- 4
-plot(datos_sp, col=brewer.pal(4, "Accent")[cols],axes=T)
+
+pdf("Figuras/F3.2.pdf")
+
+plot(datos_sp, col=brewer.pal(4, "Accent")[cols],axes=T,xaxt="n",yaxt="n")
 legend("topright", legend=c("Ninguno", "HL", "LH", "HH"), fill=brewer.pal(4, "Accent"), bty="n", cex=0.8, y.intersp=0.8)
-title("Casos de influencia")
+
+dev.off()
 
 rm(msp,cols,infl,lhlh,lhwx,lhx,wx,x)
 
@@ -148,9 +194,13 @@ datos_sp$Punto_de_silla <- m2[,5]
 datos_sp$Exacto <- m3[,5]
 gry <- c(rev(brewer.pal(6, "Reds")), brewer.pal(6, "Blues"))
 
+pdf("Figuras/FA7.pdf")
+
 spplot(datos_sp, c("Punto_de_silla", "Exacto", "Normal", "Aleatorizado"), 
        at=c(0,0.01,0.05,0.1,0.9,0.95,0.99,1), 
        col.regions=colorRampPalette(gry)(7))
+
+dev.off()
 
 rm(m1,m2,m3,gry)
 
@@ -163,6 +213,7 @@ m1 <- lm(dengue~tugurio+densidad+residuos+acueducto,data = datos_sp)
 summary(m1)
 step(m1)
 m1 <- lm(sqrt(dengue)~residuos+acueducto,data = datos_sp)
+summary(m1)
 #plot(m1)
 lm.morantest(m1, listw = w.11)
 
@@ -170,12 +221,14 @@ lm.morantest(m1, listw = w.11)
 m2 <- spautolm(dengue~tugurio+densidad+residuos+acueducto,data = datos_sp,listw=w.11)
 summary(m2)
 m2 <- spautolm(dengue~residuos+acueducto,data = datos_sp,listw=w.11)
+summary(m2)
 moran.mc(residuals(m2),w.11, 999)
 
 #CAR
 m3 <- spautolm(dengue~tugurio+densidad+residuos+acueducto,data = datos_sp,listw=w.11,family = "CAR")
 summary(m3)
 m3 <- spautolm(dengue~residuos+acueducto,data = datos_sp,listw=w.11,family = "CAR")
+summary(m3)
 moran.mc(residuals(m3),w.11, 999)
 
 #GLM
@@ -191,8 +244,11 @@ datos_sp$SAR <- residuals(m2)
 datos_sp$CAR <- residuals(m3)
 datos_sp$GAM <- residuals(m4)
 
+pdf("Figuras/F4.pdf")
+
 spplot(datos_sp,c("SAR", "CAR", "Lineal","GAM"))
 
+dev.off()
 #Epidem
 
 datos_sp$observados <- datos_sp$casos
@@ -200,20 +256,39 @@ r <- sum(datos_sp$observados)/sum(datos_sp$pob)
 datos_sp$esperados <- datos_sp$pob*r
 datos_sp$SMR <- datos_sp$observados/datos_sp$esperados
 
+pdf("Figuras/FA8.pdf")
+
 spplot(datos_sp,c("observados","esperados"), col.regions=rev(brewer.pal(7, "RdYlGn")), cuts=6)
+
+dev.off()
+
+pdf("Figuras/F5.pdf")
+
 spplot(datos_sp,"SMR",col.regions=rev(brewer.pal(7, "RdYlGn")), cuts=6)
+
+dev.off()
 
 int <- pois.exact(datos_sp$SMR)
 int <- cbind(int,datos_sp$NOM_CANT_1)
 col <- 1*(int$lower>1)
 col <- ifelse(col==0,"grey","red")
 linea <- ifelse(col=="grey",4,1) 
+
+pdf("Figuras/F6.pdf")
+
 plotCI(x = 1:81, y = int$x, ui = int$upper,li = int$lower,pch=18,err="y",
        col=col,sfrac = 0,xlab="Cantones",ylab="Riesgo Relativo",xaxt="n")
 abline(h=1,col="grey",lty=2,lwd=1.75)
 
+dev.off()
+
 datos_sp$ch <- choynowski(datos_sp$observados,datos_sp$esperados)$pmap
+
+pdf("Figuras/FA9.pdf")
+
 spplot(datos_sp,"ch")
+
+dev.off()
 
 #Empirical Bayes Estimates
 eb1 <- EBest(datos_sp$observados,datos_sp$esperados)
@@ -226,6 +301,10 @@ datos_sp$EB_ml <- res$smthrr
 eb2 <- EBlocal(datos_sp$observados,datos_sp$esperados, nb.1)
 datos_sp$EB_mm_local <- eb2$est
 
+pdf("Figuras/FA10.pdf")
 
 spplot(datos_sp, c("SMR", "EB_ml", "EB_mm", "EB_mm_local"))
 
+dev.off()
+
+#Fin del análisis
