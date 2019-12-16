@@ -55,7 +55,7 @@ Aquí se almacenan los datos utilizados en el análisis. Destacan principalmente
 
 ### Trabajo Escrito
 
-En esta carpeta se almacenan todos los archivos necesarios para la creación del documento `Escrito.pdf`. Estos archivos se crearon mediante el software [TexMaker](https://www.xm1math.net/texmaker/)
+En esta carpeta se almacenan todos los archivos necesarios para la creación del documento `Escrito.pdf`. Estos archivos se crearon mediante el software [TexMaker](https://www.xm1math.net/texmaker/). Además contiene los gráficos creados en el análisis, estos últimos son de la forma `F#.pdf` y se describen a continuación:
 
 * `F11.pdf`: Tasa de dengue (100.000 habitantes) por cantón, 2019.
 * `F12.pdf`: Tasa de dengue en quintiles por cantón, 2019.
