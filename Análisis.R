@@ -158,7 +158,7 @@ rm(nb.2,nb.3,nb.4,w.12,w.13,w.21,w.22,w.23,w.31,w.32,w.33,w.41,w.42,w.43,coords,
 
 pdf("Trabajo Escrito/F31.pdf")
 
-msp <- moran.plot(datos_sp$dengue, listw=w.11, quiet=TRUE,xlab="Casos de Dengue",ylab = "Casos espacialmente rezagados")
+msp <- moran.plot(datos_sp$dengue, listw=w.11, quiet=TRUE,xlab="Tasa de Dengue",ylab = "Tasa espacialmente rezagada")
 
 dev.off()
 
