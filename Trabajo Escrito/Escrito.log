@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7200 64-bit) (preloaded format=pdflatex 2019.10.8)  15 DEC 2019 18:40
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7200 64-bit) (preloaded format=pdflatex 2019.10.8)  15 DEC 2019 19:06
 entering extended mode
 **./Escrito.tex
 (Escrito.tex
@@ -999,66 +999,70 @@ Package pdftex.def Info: F6.pdf  used on input line 109.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<FA1.pdf, id=67, 505.89pt x 505.89pt>
+[7 <./F5.pdf>] [8 <./F6.pdf>]
+<FA1.pdf, id=84, 505.89pt x 505.89pt>
 File: FA1.pdf Graphic file (type pdf)
 <use FA1.pdf>
-Package pdftex.def Info: FA1.pdf  used on input line 119.
+Package pdftex.def Info: FA1.pdf  used on input line 121.
 (pdftex.def)             Requested size: 204.85802pt x 204.86116pt.
-<FA2.pdf, id=68, 505.89pt x 505.89pt>
+<FA2.pdf, id=85, 505.89pt x 505.89pt>
 File: FA2.pdf Graphic file (type pdf)
 <use FA2.pdf>
-Package pdftex.def Info: FA2.pdf  used on input line 120.
+Package pdftex.def Info: FA2.pdf  used on input line 122.
 (pdftex.def)             Requested size: 204.85802pt x 204.86116pt.
-[7 <./F5.pdf>]
-<FA3.pdf, id=78, 505.89pt x 505.89pt>
+ [9 <./FA1.pdf> <./FA2.pdf>]
+<FA3.pdf, id=99, 505.89pt x 505.89pt>
 File: FA3.pdf Graphic file (type pdf)
 <use FA3.pdf>
-Package pdftex.def Info: FA3.pdf  used on input line 126.
+Package pdftex.def Info: FA3.pdf  used on input line 128.
 (pdftex.def)             Requested size: 204.85802pt x 204.86116pt.
-<FA4.pdf, id=79, 505.89pt x 505.89pt>
+<FA4.pdf, id=100, 505.89pt x 505.89pt>
 File: FA4.pdf Graphic file (type pdf)
 <use FA4.pdf>
-Package pdftex.def Info: FA4.pdf  used on input line 127.
+Package pdftex.def Info: FA4.pdf  used on input line 129.
 (pdftex.def)             Requested size: 204.85802pt x 204.86116pt.
-<FA5.pdf, id=80, 505.89pt x 505.89pt>
+<FA5.pdf, id=101, 505.89pt x 505.89pt>
 File: FA5.pdf Graphic file (type pdf)
 <use FA5.pdf>
-Package pdftex.def Info: FA5.pdf  used on input line 128.
+Package pdftex.def Info: FA5.pdf  used on input line 130.
 (pdftex.def)             Requested size: 204.85802pt x 204.86116pt.
-<FA6.pdf, id=81, 505.89pt x 505.89pt>
+<FA6.pdf, id=102, 505.89pt x 505.89pt>
 File: FA6.pdf Graphic file (type pdf)
 <use FA6.pdf>
-Package pdftex.def Info: FA6.pdf  used on input line 129.
+Package pdftex.def Info: FA6.pdf  used on input line 131.
 (pdftex.def)             Requested size: 204.85802pt x 204.86116pt.
-<FA7.pdf, id=82, 505.89pt x 505.89pt>
+ [10 <./FA3.pdf> <./FA4.pdf> <./FA5.pdf> <./FA6.pdf>]
+<FA7.pdf, id=126, 505.89pt x 505.89pt>
 File: FA7.pdf Graphic file (type pdf)
 <use FA7.pdf>
-Package pdftex.def Info: FA7.pdf  used on input line 135.
+Package pdftex.def Info: FA7.pdf  used on input line 137.
 (pdftex.def)             Requested size: 379.41655pt x 379.41655pt.
-<FA8.pdf, id=83, 496.41663pt x 230.52423pt>
+ [11 <./FA7.pdf>]
+<FA8.pdf, id=135, 496.41663pt x 230.52423pt>
 File: FA8.pdf Graphic file (type pdf)
 <use FA8.pdf>
-Package pdftex.def Info: FA8.pdf  used on input line 141.
+Package pdftex.def Info: FA8.pdf  used on input line 143.
 (pdftex.def)             Requested size: 372.31155pt x 172.89273pt.
-<FA9.pdf, id=84, 505.89pt x 505.89pt>
+<FA9.pdf, id=136, 505.89pt x 505.89pt>
 File: FA9.pdf Graphic file (type pdf)
 <use FA9.pdf>
-Package pdftex.def Info: FA9.pdf  used on input line 147.
-(pdftex.def)             Requested size: 379.41655pt x 379.41655pt.
-<FA10.pdf, id=85, 505.89pt x 505.89pt>
+Package pdftex.def Info: FA9.pdf  used on input line 149.
+(pdftex.def)             Requested size: 278.24034pt x 278.24034pt.
+ [12 <./FA8.pdf> <./FA9.pdf>]
+<FA10.pdf, id=152, 505.89pt x 505.89pt>
 File: FA10.pdf Graphic file (type pdf)
 <use FA10.pdf>
-Package pdftex.def Info: FA10.pdf  used on input line 153.
+Package pdftex.def Info: FA10.pdf  used on input line 155.
 (pdftex.def)             Requested size: 379.41655pt x 379.41655pt.
- (Escrito.bbl
+
+[13 <./FA10.pdf>] (Escrito.bbl
 LaTeX Font Info:    Trying to load font information for OT1+jkptt on input line
  53.
 
 ("C:\Users\Pablo Vivas\AppData\Local\Programs\MiKTeX 2.9\tex/latex/kpfonts\ot1j
 kptt.fd"
 File: ot1jkptt.fd 2007/01/26 Fontinst v1.928 font definitions for OT1/jkptt.
-) [8 <./F6.pdf>] [9 <./FA1.pdf> <./FA2.pdf> <./FA3.pdf> <./FA4.pdf> <./FA5.pdf>
- <./FA6.pdf>] [10 <./FA7.pdf> <./FA8.pdf>] [11 <./FA9.pdf>] [12 <./FA10.pdf>]
+)
 Underfull \hbox (badness 3333) in paragraph at lines 155--169
 []\OT1/jkp/m/n/12 Fabio S[]anchez Pe[]na.  (s.f.[]).  \OT1/jkp/m/it/12 Mat-he-m
 a-ti-cal Mo-dels for the De-ve-lop-ment
@@ -1130,7 +1134,7 @@ Underfull \hbox (badness 1325) in paragraph at lines 447--462
 /jkptt/m/n/12 https://CRAN.R-
  []
 
-
+[14]
 Underfull \hbox (badness 5533) in paragraph at lines 476--491
 []\OT1/jkp/m/n/12 Wickham, H., y Bryan, J.  (2019).  readxl: Read ex-cel fi-les
  [Ma-
@@ -1142,7 +1146,7 @@ Underfull \hbox (badness 5302) in paragraph at lines 476--491
 tt/m/n/12 https://CRAN.R-
  []
 
-) [13] (Escrito.aux
+) [15] (Escrito.aux
 LaTeX Info: Redefining \. on input line 13.
 LaTeX Info: Redefining \% on input line 13.
 )
@@ -1166,9 +1170,9 @@ ms/MiKTeX 2.9/fonts/type1/public/kpfonts/jkpmit8a.pfb><C:/Users/Pablo Vivas/App
 Data/Local/Programs/MiKTeX 2.9/fonts/type1/public/kpfonts/jkpmn8a.pfb><C:/Users
 /Pablo Vivas/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/kpfonts/jkptt
 mn8a.pfb>
-Output written on Escrito.pdf (13 pages, 18992502 bytes).
+Output written on Escrito.pdf (15 pages, 18995543 bytes).
 PDF statistics:
- 181 PDF objects out of 1000 (max. 8388607)
+ 187 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  96 words of extra memory for PDF output out of 10000 (max. 10000000)
 

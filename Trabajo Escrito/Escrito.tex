@@ -102,7 +102,7 @@ Se concluye esta sección con un análisis epidemiológico del dengue. Para inic
 
 Aquí se destacan 8 cantones cuyo riesgo relativo resulta significativo: Sarapiquí, Guacimo, La Cruz, Turrialba, Atanas, Montes de Oro, Garabito y Pococí, es decir, una persona de Sarapiquí es hasta 22 veces más probable de enfermarse de dengue y una persona de Guácimo hasta 13 veces más probable. Se prosigue el análisis con un mapa de probabilidad de Choynowski, que muestra las probabilidades de las desviaciones observadas de la media calculado bajo el supuesto de que la distribución geográfica verdadera es uniforme y se presenta en la figura 11 del anexo. De la figura 11 se concluye que se podría centrar esfuerzos para prevenir los casos de dengue en los cantones de San Carlos, Limón y Talamanca, entre otros.
 \newline
-Finaliza esta sección con el cálculo de riesgos relativos mediante modelos empíricos bayesianos, específicamente se calculan 3 medidas: estimador empírico global de Bayes (mm), suavizado empírico Bayes (ml) con parámetros $\nu = 0,255$ y $\alpha = 0,253$; y estimador empírico local de Bayes (mm.local). Los resultados se grafican en la figura 12 de Anexos. En general, estas medidas no difieren al cálculo del SMR.
+Finaliza esta sección con el cálculo de riesgos relativos mediante modelos empíricos bayesianos, específicamente se calculan 3 medidas: estimador empírico global de Bayes (mm), suavizado empírico de Bayes (ml) con parámetros $\nu = 0,255$ y $\alpha = 0,253$; y estimador empírico local de Bayes (mm.local). Los resultados se grafican en la figura 12 de Anexos. En general, estas medidas no difieren al cálculo del SMR.
 
 \begin{figure}[h]
 \centering
@@ -112,47 +112,50 @@ Finaliza esta sección con el cálculo de riesgos relativos mediante modelos emp
 
 \section{Conclusiones}
 
+Por medio del análisis realizado se concluye que la ditribución de la tasa de dengue por 100.000 habitantes en el territorio de Costa Rica no es aleatoria, sino que existen patrones espaciales que se deben tomar en consideración, es decir, se evidenció la existencia de autocorrelación espacial. Además esta autocorrelación no depende de la estructura de vecinos ni de la selección de matriz de pesos que se elija, debido a que son muy evidenctes las agrupaciones espaciales que existen. También se determinó que la tasa de dengue por 100.000 habitantes puede ser explicada de gran forma mediante un modelo generalizado quasi-poisson con un término no paramétrico de suavizamiento y que las variables están asociadas a este fenómeno son el porcentaje de viviendas que eliminan los residuos sólidos por camión recolector y el porcentaje de viviendas con acueducto. Asimismo se sospecha de un sobreajuste del término no paramétrico de este modelo. Además que los habitantes de los cantones de Sarapiquí, Guacimo, La Cruz, Turrialba, Atanas, Montes de Oro, Garabito y Pococí tienen un riesgo mayor de contraer dengue y que se puede dedicar campañas de prevención en los cantones de San Carlos, Limón y Talamanca, entre otros. Por último los estimadores empíricos bayesianos no difieren mucho del SMR.
+\newpage
 \section{Anexos}
 
 \begin{figure}[hbtp]
 \centering
 \includegraphics[width=.48\textwidth]{FA1.pdf}
 \includegraphics[width=.48\textwidth]{FA2.pdf}
-\caption{Casos de dengue (100.000 habitantes) por cantón, 2019.}
+\caption{Casos de dengue por cantón y desviación estándar de la tasa de dengue por 100.000 habitantes, 2019.}
 \end{figure}
-
+\newpage
 \begin{figure}[hbtp]
 \centering
 \includegraphics[width=.48\textwidth]{FA3.pdf}
 \includegraphics[width=.48\textwidth]{FA4.pdf}
 \includegraphics[width=.48\textwidth]{FA5.pdf}
 \includegraphics[width=.48\textwidth]{FA6.pdf}
-\caption{Estadísticos descriptivos}
+\caption{Porcentaje de viviendas de tipo tugurio, densidad de la población, porcentaje de viviendas que eliminan los residuos sólidos por camión recolector, porcentaje de viviendas con acueducto}
 \end{figure}
-
+\newpage
 \begin{figure}[hbtp]
 \centering
 \includegraphics[scale=0.75]{FA7.pdf}
-\caption{Distintas pruebas de Moran}
+\caption{Probabilidad de cada supuesto en tasa de dengue por 100.000 habitantes}
 \end{figure}
-
+\newpage
 \begin{figure}[hbtp]
 \centering
 \includegraphics[scale=0.75]{FA8.pdf}
-\caption{Valores Observados vs Esperados}
+\caption{Valores observados y valores esperados de la tasa de dengue por 100.000 habitantes}
 \end{figure}
 
 \begin{figure}[hbtp]
 \centering
-\includegraphics[scale=0.75]{FA9.pdf}
+\includegraphics[scale=0.55]{FA9.pdf}
 \caption{Mapa de probabilidad de Chownoysky}
 \end{figure}
-
+\newpage
 \begin{figure}[hbtp]
 \centering
 \includegraphics[scale=0.75]{FA10.pdf}
-\caption{Distintas pruebas de Moran}
+\caption{Estimador empírico global de Bayes (mm), Suavizado empírico de Bayes (ml) con parámetros $\nu = 0,255$ y $\alpha = 0,253$; estimador empírico local de Bayes (mm.local) y SMR}
 \end{figure}
+\newpage
 
 %%Bibliografía
 \bibliographystyle{apacite}

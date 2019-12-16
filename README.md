@@ -57,22 +57,22 @@ Aquí se almacenan los datos utilizados en el análisis. Destacan principalmente
 
 En esta carpeta se almacenan todos los archivos necesarios para la creación del documento `Escrito.pdf`. Estos archivos se crearon mediante el software [TexMaker](https://www.xm1math.net/texmaker/)
 
-* `F11.pdf`: 
-* `F12.pdf`: 
-* `F21.pdf`: 
-* `F22.pdf`: 
-* `F31.pdf`: 
-* `F32.pdf`: 
-* `F4.pdf`: 
-* `F5.pdf`: 
-* `F6.pdf`: 
-* `FA1.pdf`: 
-* `FA2.pdf`: 
-* `FA3.pdf`: 
-* `FA4.pdf`: 
-* `FA5.pdf`: 
-* `FA6.pdf`: 
-* `FA7.pdf`: 
-* `FA8.pdf`: 
-* `FA9.pdf`: 
-* `FA10.pdf`:
+* `F11.pdf`: Tasa de dengue (100.000 habitantes) por cantón, 2019.
+* `F12.pdf`: Tasa de dengue en quintiles por cantón, 2019.
+* `F21.pdf`: Estructuras de vecinos: Reina.
+* `F22.pdf`: Estructuras de vecinos: Knn(4).
+* `F31.pdf`: Tasa de dengue y tasa de dengue espacialmente rezagada.
+* `F32.pdf`: Valores de influencia por cantón, 2019.
+* `F4.pdf`: Residuales de los cuatro modelos ajustados
+* `F5.pdf`: Riesgo relativo por cantón, 2019.
+* `F6.pdf`: Intervalos de confianza del 95% para el riesgo relativo de dengue por cantón, 2019.
+* `FA1.pdf`: Casos de dengue por cantón, 2019.
+* `FA2.pdf`: Desviación estándar de la tasa de dengue por 100.000 habitantes por cantón, 2019.
+* `FA3.pdf`: Porcentaje de viviendas de tipo tugurio por cantón, 2011.
+* `FA4.pdf`: Densidad de la población por cantón, 2011.
+* `FA5.pdf`: Porcentaje de viviendas que eliminan los residuos sólidos por camión recolector por cantón, 2011.
+* `FA6.pdf`: Porcentaje de viviendas con acueducto por cantón, 2011.
+* `FA7.pdf`: Probabilidad de cada supuesto en tasa de dengue por 100.000 habitantes
+* `FA8.pdf`: Valores observados y valores esperados de la tasa de dengue por 100.000 habitantes
+* `FA9.pdf`: Mapa de probabilidad de Chownoysky
+* `FA10.pdf`: Estimador empírico global de Bayes (mm), Suavizado empírico de Bayes (ml) con parámetros $\nu = 0,255$ y $\alpha = 0,253$; estimador empírico local de Bayes (mm.local) y SMR
